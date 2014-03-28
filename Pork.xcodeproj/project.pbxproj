@@ -1,0 +1,709 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D45F1B0318E5ACFE005CE515 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45F1AD418E5AB4D005CE515 /* Cocoa.framework */; };
+		D45F1B0918E5ACFE005CE515 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D45F1B0718E5ACFE005CE515 /* InfoPlist.strings */; };
+		D45F1B0B18E5ACFE005CE515 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D45F1B0A18E5ACFE005CE515 /* main.m */; };
+		D45F1B0F18E5ACFE005CE515 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D45F1B0D18E5ACFE005CE515 /* Credits.rtf */; };
+		D45F1B1218E5ACFE005CE515 /* PORKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D45F1B1118E5ACFE005CE515 /* PORKAppDelegate.m */; };
+		D45F1B1518E5ACFE005CE515 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D45F1B1318E5ACFE005CE515 /* MainMenu.xib */; };
+		D45F1B1718E5ACFE005CE515 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D45F1B1618E5ACFE005CE515 /* Images.xcassets */; };
+		D45F1B1E18E5ACFE005CE515 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45F1AD418E5AB4D005CE515 /* Cocoa.framework */; };
+		D45F1B2618E5ACFE005CE515 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D45F1B2418E5ACFE005CE515 /* InfoPlist.strings */; };
+		D45F1B2818E5ACFE005CE515 /* PorkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D45F1B2718E5ACFE005CE515 /* PorkTests.m */; };
+		D45F1B3118E5ADF9005CE515 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45F1B3018E5ADF9005CE515 /* Quartz.framework */; };
+		D45F1B4118E5B926005CE515 /* Reducers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45F1B3A18E5B91C005CE515 /* Reducers.framework */; };
+		D45F1B5518E5BF80005CE515 /* Lagrangian.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45F1B4C18E5BF15005CE515 /* Lagrangian.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D45F1B5618E5BF96005CE515 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45F1B5318E5BF5C005CE515 /* XCTest.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D45F1B5718E5BFD8005CE515 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45F1B5318E5BF5C005CE515 /* XCTest.framework */; };
+		D45F1B5A18E5C023005CE515 /* Reducers.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D45F1B3A18E5B91C005CE515 /* Reducers.framework */; };
+		D45F1B5D18E5D649005CE515 /* PORKDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = D45F1B5C18E5D649005CE515 /* PORKDocument.m */; };
+		D45F1B6018E5D683005CE515 /* PORKPage.m in Sources */ = {isa = PBXBuildFile; fileRef = D45F1B5F18E5D683005CE515 /* PORKPage.m */; };
+		D45F1B6318E5D68D005CE515 /* PORKColumn.m in Sources */ = {isa = PBXBuildFile; fileRef = D45F1B6218E5D68D005CE515 /* PORKColumn.m */; };
+		D45F1B6618E5D696005CE515 /* PORKLine.m in Sources */ = {isa = PBXBuildFile; fileRef = D45F1B6518E5D695005CE515 /* PORKLine.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D45F1B1F18E5ACFE005CE515 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D45F1AB618E5AB2A005CE515 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D45F1B0118E5ACFE005CE515;
+			remoteInfo = Pork;
+		};
+		D45F1B3918E5B91C005CE515 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D45F1B3218E5B91C005CE515 /* Reducers.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D4ACA63718DDEC4900EBD899;
+			remoteInfo = Reducers;
+		};
+		D45F1B3B18E5B91C005CE515 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D45F1B3218E5B91C005CE515 /* Reducers.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D4CE31F018DF598B00CADB65;
+			remoteInfo = "Reducers (iOS static framework)";
+		};
+		D45F1B3D18E5B91C005CE515 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D45F1B3218E5B91C005CE515 /* Reducers.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D46D2B6118E11E490065701D;
+			remoteInfo = "Reducers Mac Tests";
+		};
+		D45F1B3F18E5B91C005CE515 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D45F1B3218E5B91C005CE515 /* Reducers.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D46D2B7518E11E800065701D;
+			remoteInfo = "Reducers iOS Tests";
+		};
+		D45F1B4218E5B930005CE515 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D45F1B3218E5B91C005CE515 /* Reducers.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D4ACA63618DDEC4900EBD899;
+			remoteInfo = Reducers;
+		};
+		D45F1B4B18E5BF15005CE515 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D45F1B4418E5BF15005CE515 /* Lagrangian.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D4B62B4C16A1581700E42C84;
+			remoteInfo = "Lagrangian (Mac OS X framework)";
+		};
+		D45F1B4D18E5BF15005CE515 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D45F1B4418E5BF15005CE515 /* Lagrangian.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D473F5CC16DA713E000FCD8D;
+			remoteInfo = "Lagrangian (iOS static framework)";
+		};
+		D45F1B4F18E5BF15005CE515 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D45F1B4418E5BF15005CE515 /* Lagrangian.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D46D2B4818E112360065701D;
+			remoteInfo = "Lagrangian (Mac Tests)";
+		};
+		D45F1B5118E5BF15005CE515 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D45F1B4418E5BF15005CE515 /* Lagrangian.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D4CE328618DF698300CADB65;
+			remoteInfo = "Lagrangian (iOS Test Stub)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D45F1B5918E5C000005CE515 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D45F1B5A18E5C023005CE515 /* Reducers.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D45F1AC118E5AB2A005CE515 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D45F1AD418E5AB4D005CE515 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D45F1AD718E5AB4D005CE515 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D45F1AD818E5AB4D005CE515 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D45F1AD918E5AB4D005CE515 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D45F1B0218E5ACFE005CE515 /* Pork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pork.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D45F1B0618E5ACFE005CE515 /* Pork-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pork-Info.plist"; sourceTree = "<group>"; };
+		D45F1B0818E5ACFE005CE515 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D45F1B0A18E5ACFE005CE515 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D45F1B0C18E5ACFE005CE515 /* Pork-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pork-Prefix.pch"; sourceTree = "<group>"; };
+		D45F1B0E18E5ACFE005CE515 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		D45F1B1018E5ACFE005CE515 /* PORKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PORKAppDelegate.h; sourceTree = "<group>"; };
+		D45F1B1118E5ACFE005CE515 /* PORKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PORKAppDelegate.m; sourceTree = "<group>"; };
+		D45F1B1418E5ACFE005CE515 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D45F1B1618E5ACFE005CE515 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D45F1B1C18E5ACFE005CE515 /* PorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PorkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D45F1B2318E5ACFE005CE515 /* PorkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PorkTests-Info.plist"; sourceTree = "<group>"; };
+		D45F1B2518E5ACFE005CE515 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D45F1B2718E5ACFE005CE515 /* PorkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PorkTests.m; sourceTree = "<group>"; };
+		D45F1B3018E5ADF9005CE515 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		D45F1B3218E5B91C005CE515 /* Reducers.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Reducers.xcodeproj; path = External/Reducers/Reducers.xcodeproj; sourceTree = "<group>"; };
+		D45F1B4418E5BF15005CE515 /* Lagrangian.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Lagrangian.xcodeproj; path = External/Reducers/External/Lagrangian/Lagrangian.xcodeproj; sourceTree = "<group>"; };
+		D45F1B5318E5BF5C005CE515 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D45F1B5B18E5D649005CE515 /* PORKDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PORKDocument.h; sourceTree = "<group>"; };
+		D45F1B5C18E5D649005CE515 /* PORKDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PORKDocument.m; sourceTree = "<group>"; };
+		D45F1B5E18E5D683005CE515 /* PORKPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PORKPage.h; sourceTree = "<group>"; };
+		D45F1B5F18E5D683005CE515 /* PORKPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PORKPage.m; sourceTree = "<group>"; };
+		D45F1B6118E5D68D005CE515 /* PORKColumn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PORKColumn.h; sourceTree = "<group>"; };
+		D45F1B6218E5D68D005CE515 /* PORKColumn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PORKColumn.m; sourceTree = "<group>"; };
+		D45F1B6418E5D695005CE515 /* PORKLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PORKLine.h; sourceTree = "<group>"; };
+		D45F1B6518E5D695005CE515 /* PORKLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PORKLine.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D45F1AFF18E5ACFE005CE515 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D45F1B5618E5BF96005CE515 /* XCTest.framework in Frameworks */,
+				D45F1B5518E5BF80005CE515 /* Lagrangian.framework in Frameworks */,
+				D45F1B4118E5B926005CE515 /* Reducers.framework in Frameworks */,
+				D45F1B3118E5ADF9005CE515 /* Quartz.framework in Frameworks */,
+				D45F1B0318E5ACFE005CE515 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D45F1B1918E5ACFE005CE515 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D45F1B1E18E5ACFE005CE515 /* Cocoa.framework in Frameworks */,
+				D45F1B5718E5BFD8005CE515 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D45F1AB518E5AB2A005CE515 = {
+			isa = PBXGroup;
+			children = (
+				D45F1B0418E5ACFE005CE515 /* Pork */,
+				D45F1B2118E5ACFE005CE515 /* PorkTests */,
+				D45F1AC018E5AB2A005CE515 /* Frameworks */,
+				D45F1ABF18E5AB2A005CE515 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D45F1ABF18E5AB2A005CE515 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D45F1B0218E5ACFE005CE515 /* Pork.app */,
+				D45F1B1C18E5ACFE005CE515 /* PorkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D45F1AC018E5AB2A005CE515 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D45F1B5318E5BF5C005CE515 /* XCTest.framework */,
+				D45F1B3218E5B91C005CE515 /* Reducers.xcodeproj */,
+				D45F1B4418E5BF15005CE515 /* Lagrangian.xcodeproj */,
+				D45F1B3018E5ADF9005CE515 /* Quartz.framework */,
+				D45F1AC118E5AB2A005CE515 /* Foundation.framework */,
+				D45F1AD418E5AB4D005CE515 /* Cocoa.framework */,
+				D45F1AD618E5AB4D005CE515 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D45F1AD618E5AB4D005CE515 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D45F1AD718E5AB4D005CE515 /* Foundation.framework */,
+				D45F1AD818E5AB4D005CE515 /* CoreData.framework */,
+				D45F1AD918E5AB4D005CE515 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		D45F1B0418E5ACFE005CE515 /* Pork */ = {
+			isa = PBXGroup;
+			children = (
+				D45F1B1018E5ACFE005CE515 /* PORKAppDelegate.h */,
+				D45F1B1118E5ACFE005CE515 /* PORKAppDelegate.m */,
+				D45F1B5B18E5D649005CE515 /* PORKDocument.h */,
+				D45F1B5C18E5D649005CE515 /* PORKDocument.m */,
+				D45F1B5E18E5D683005CE515 /* PORKPage.h */,
+				D45F1B5F18E5D683005CE515 /* PORKPage.m */,
+				D45F1B6118E5D68D005CE515 /* PORKColumn.h */,
+				D45F1B6218E5D68D005CE515 /* PORKColumn.m */,
+				D45F1B6418E5D695005CE515 /* PORKLine.h */,
+				D45F1B6518E5D695005CE515 /* PORKLine.m */,
+				D45F1B1318E5ACFE005CE515 /* MainMenu.xib */,
+				D45F1B1618E5ACFE005CE515 /* Images.xcassets */,
+				D45F1B0518E5ACFE005CE515 /* Supporting Files */,
+			);
+			path = Pork;
+			sourceTree = "<group>";
+		};
+		D45F1B0518E5ACFE005CE515 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D45F1B0618E5ACFE005CE515 /* Pork-Info.plist */,
+				D45F1B0718E5ACFE005CE515 /* InfoPlist.strings */,
+				D45F1B0A18E5ACFE005CE515 /* main.m */,
+				D45F1B0C18E5ACFE005CE515 /* Pork-Prefix.pch */,
+				D45F1B0D18E5ACFE005CE515 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D45F1B2118E5ACFE005CE515 /* PorkTests */ = {
+			isa = PBXGroup;
+			children = (
+				D45F1B2718E5ACFE005CE515 /* PorkTests.m */,
+				D45F1B2218E5ACFE005CE515 /* Supporting Files */,
+			);
+			path = PorkTests;
+			sourceTree = "<group>";
+		};
+		D45F1B2218E5ACFE005CE515 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D45F1B2318E5ACFE005CE515 /* PorkTests-Info.plist */,
+				D45F1B2418E5ACFE005CE515 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D45F1B3318E5B91C005CE515 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D45F1B3A18E5B91C005CE515 /* Reducers.framework */,
+				D45F1B3C18E5B91C005CE515 /* libReducers.a */,
+				D45F1B3E18E5B91C005CE515 /* Reducers Mac Tests.xctest */,
+				D45F1B4018E5B91C005CE515 /* Reducers iOS Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D45F1B4518E5BF15005CE515 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D45F1B4C18E5BF15005CE515 /* Lagrangian.framework */,
+				D45F1B4E18E5BF15005CE515 /* libLagrangian.a */,
+				D45F1B5018E5BF15005CE515 /* Lagrangian (Mac Tests).xctest */,
+				D45F1B5218E5BF15005CE515 /* Lagrangian (iOS Test Stub).xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D45F1B0118E5ACFE005CE515 /* Pork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D45F1B2918E5ACFE005CE515 /* Build configuration list for PBXNativeTarget "Pork" */;
+			buildPhases = (
+				D45F1AFE18E5ACFE005CE515 /* Sources */,
+				D45F1AFF18E5ACFE005CE515 /* Frameworks */,
+				D45F1B0018E5ACFE005CE515 /* Resources */,
+				D45F1B5918E5C000005CE515 /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D45F1B4318E5B930005CE515 /* PBXTargetDependency */,
+			);
+			name = Pork;
+			productName = Pork;
+			productReference = D45F1B0218E5ACFE005CE515 /* Pork.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D45F1B1B18E5ACFE005CE515 /* PorkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D45F1B2C18E5ACFE005CE515 /* Build configuration list for PBXNativeTarget "PorkTests" */;
+			buildPhases = (
+				D45F1B1818E5ACFE005CE515 /* Sources */,
+				D45F1B1918E5ACFE005CE515 /* Frameworks */,
+				D45F1B1A18E5ACFE005CE515 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D45F1B2018E5ACFE005CE515 /* PBXTargetDependency */,
+			);
+			name = PorkTests;
+			productName = PorkTests;
+			productReference = D45F1B1C18E5ACFE005CE515 /* PorkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D45F1AB618E5AB2A005CE515 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Rob Rix";
+				TargetAttributes = {
+					D45F1B1B18E5ACFE005CE515 = {
+						TestTargetID = D45F1B0118E5ACFE005CE515;
+					};
+				};
+			};
+			buildConfigurationList = D45F1AB918E5AB2A005CE515 /* Build configuration list for PBXProject "Pork" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D45F1AB518E5AB2A005CE515;
+			productRefGroup = D45F1ABF18E5AB2A005CE515 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D45F1B4518E5BF15005CE515 /* Products */;
+					ProjectRef = D45F1B4418E5BF15005CE515 /* Lagrangian.xcodeproj */;
+				},
+				{
+					ProductGroup = D45F1B3318E5B91C005CE515 /* Products */;
+					ProjectRef = D45F1B3218E5B91C005CE515 /* Reducers.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				D45F1B0118E5ACFE005CE515 /* Pork */,
+				D45F1B1B18E5ACFE005CE515 /* PorkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D45F1B3A18E5B91C005CE515 /* Reducers.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Reducers.framework;
+			remoteRef = D45F1B3918E5B91C005CE515 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D45F1B3C18E5B91C005CE515 /* libReducers.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libReducers.a;
+			remoteRef = D45F1B3B18E5B91C005CE515 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D45F1B3E18E5B91C005CE515 /* Reducers Mac Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Reducers Mac Tests.xctest";
+			remoteRef = D45F1B3D18E5B91C005CE515 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D45F1B4018E5B91C005CE515 /* Reducers iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Reducers iOS Tests.xctest";
+			remoteRef = D45F1B3F18E5B91C005CE515 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D45F1B4C18E5BF15005CE515 /* Lagrangian.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Lagrangian.framework;
+			remoteRef = D45F1B4B18E5BF15005CE515 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D45F1B4E18E5BF15005CE515 /* libLagrangian.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLagrangian.a;
+			remoteRef = D45F1B4D18E5BF15005CE515 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D45F1B5018E5BF15005CE515 /* Lagrangian (Mac Tests).xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Lagrangian (Mac Tests).xctest";
+			remoteRef = D45F1B4F18E5BF15005CE515 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D45F1B5218E5BF15005CE515 /* Lagrangian (iOS Test Stub).xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Lagrangian (iOS Test Stub).xctest";
+			remoteRef = D45F1B5118E5BF15005CE515 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D45F1B0018E5ACFE005CE515 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D45F1B0918E5ACFE005CE515 /* InfoPlist.strings in Resources */,
+				D45F1B1718E5ACFE005CE515 /* Images.xcassets in Resources */,
+				D45F1B0F18E5ACFE005CE515 /* Credits.rtf in Resources */,
+				D45F1B1518E5ACFE005CE515 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D45F1B1A18E5ACFE005CE515 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D45F1B2618E5ACFE005CE515 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D45F1AFE18E5ACFE005CE515 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D45F1B5D18E5D649005CE515 /* PORKDocument.m in Sources */,
+				D45F1B6318E5D68D005CE515 /* PORKColumn.m in Sources */,
+				D45F1B1218E5ACFE005CE515 /* PORKAppDelegate.m in Sources */,
+				D45F1B6018E5D683005CE515 /* PORKPage.m in Sources */,
+				D45F1B0B18E5ACFE005CE515 /* main.m in Sources */,
+				D45F1B6618E5D696005CE515 /* PORKLine.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D45F1B1818E5ACFE005CE515 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D45F1B2818E5ACFE005CE515 /* PorkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D45F1B2018E5ACFE005CE515 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D45F1B0118E5ACFE005CE515 /* Pork */;
+			targetProxy = D45F1B1F18E5ACFE005CE515 /* PBXContainerItemProxy */;
+		};
+		D45F1B4318E5B930005CE515 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Reducers;
+			targetProxy = D45F1B4218E5B930005CE515 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D45F1B0718E5ACFE005CE515 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D45F1B0818E5ACFE005CE515 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D45F1B0D18E5ACFE005CE515 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D45F1B0E18E5ACFE005CE515 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		D45F1B1318E5ACFE005CE515 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D45F1B1418E5ACFE005CE515 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		D45F1B2418E5ACFE005CE515 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D45F1B2518E5ACFE005CE515 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D45F1ACA18E5AB2A005CE515 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pork/Pork-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D45F1ACB18E5AB2A005CE515 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pork/Pork-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D45F1B2A18E5ACFE005CE515 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Pork/Pork-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks $(FRAMEWORK_SEARCH_PATHS)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D45F1B2B18E5ACFE005CE515 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				INFOPLIST_FILE = "Pork/Pork-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks $(FRAMEWORK_SEARCH_PATHS)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D45F1B2D18E5ACFE005CE515 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Pork.app/Contents/MacOS/Pork";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PorkTests/PorkTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D45F1B2E18E5ACFE005CE515 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Pork.app/Contents/MacOS/Pork";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PorkTests/PorkTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D45F1AB918E5AB2A005CE515 /* Build configuration list for PBXProject "Pork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D45F1ACA18E5AB2A005CE515 /* Debug */,
+				D45F1ACB18E5AB2A005CE515 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D45F1B2918E5ACFE005CE515 /* Build configuration list for PBXNativeTarget "Pork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D45F1B2A18E5ACFE005CE515 /* Debug */,
+				D45F1B2B18E5ACFE005CE515 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D45F1B2C18E5ACFE005CE515 /* Build configuration list for PBXNativeTarget "PorkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D45F1B2D18E5ACFE005CE515 /* Debug */,
+				D45F1B2E18E5ACFE005CE515 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D45F1AB618E5AB2A005CE515 /* Project object */;
+}

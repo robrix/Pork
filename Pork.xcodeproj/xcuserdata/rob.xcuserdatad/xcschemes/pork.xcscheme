@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D45F1ABD18E5AB2A005CE515"
-               BuildableName = "pork"
-               BlueprintName = "pork"
-               ReferencedContainer = "container:pork.xcodeproj">
+               BuildableName = "Pork.temp_caseinsensitive_rename"
+               BlueprintName = "Pork.temp_caseinsensitive_rename"
+               ReferencedContainer = "container:Pork.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,14 +28,24 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D45F1AE318E5AB4D005CE515"
+               BuildableName = "libporkTests.xctest"
+               BlueprintName = "libPork.temp_caseinsensitive_renameTests"
+               ReferencedContainer = "container:Pork.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D45F1ABD18E5AB2A005CE515"
-            BuildableName = "pork"
-            BlueprintName = "pork"
-            ReferencedContainer = "container:pork.xcodeproj">
+            BuildableName = "Pork.temp_caseinsensitive_rename"
+            BlueprintName = "Pork.temp_caseinsensitive_rename"
+            ReferencedContainer = "container:Pork.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D45F1ABD18E5AB2A005CE515"
-            BuildableName = "pork"
-            BlueprintName = "pork"
-            ReferencedContainer = "container:pork.xcodeproj">
+            BuildableName = "Pork.temp_caseinsensitive_rename"
+            BlueprintName = "Pork.temp_caseinsensitive_rename"
+            ReferencedContainer = "container:Pork.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -70,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D45F1ABD18E5AB2A005CE515"
-            BuildableName = "pork"
-            BlueprintName = "pork"
-            ReferencedContainer = "container:pork.xcodeproj">
+            BuildableName = "Pork.temp_caseinsensitive_rename"
+            BlueprintName = "Pork.temp_caseinsensitive_rename"
+            ReferencedContainer = "container:Pork.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

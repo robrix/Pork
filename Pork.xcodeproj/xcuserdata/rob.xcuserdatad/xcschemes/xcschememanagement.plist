@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pork.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>PorkTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>libpork.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>pork.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>D45F1ABD18E5AB2A005CE515</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D45F1AD218E5AB4D005CE515</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D45F1AE318E5AB4D005CE515</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D45F1B0118E5ACFE005CE515</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D45F1B1B18E5ACFE005CE515</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

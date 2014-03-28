@@ -1,0 +1,3 @@
+[submodule "External/Reducers"]
+	path = External/Reducers
+	url = https://github.com/robrix/Reducers.git
