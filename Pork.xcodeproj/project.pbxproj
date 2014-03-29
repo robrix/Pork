@@ -612,10 +612,6 @@
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
 				INFOPLIST_FILE = "Pork/Pork-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks $(FRAMEWORK_SEARCH_PATHS)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
