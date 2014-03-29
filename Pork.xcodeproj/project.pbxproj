@@ -694,6 +694,7 @@
 				D45F1B2B18E5ACFE005CE515 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D45F1B2C18E5ACFE005CE515 /* Build configuration list for PBXNativeTarget "PorkTests" */ = {
 			isa = XCConfigurationList;
@@ -702,6 +703,7 @@
 				D45F1B2E18E5ACFE005CE515 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
