@@ -19,14 +19,13 @@
 		D45F1B2818E5ACFE005CE515 /* PorkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D45F1B2718E5ACFE005CE515 /* PorkTests.m */; };
 		D45F1B3118E5ADF9005CE515 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45F1B3018E5ADF9005CE515 /* Quartz.framework */; };
 		D45F1B4118E5B926005CE515 /* Reducers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45F1B3A18E5B91C005CE515 /* Reducers.framework */; };
-		D45F1B5518E5BF80005CE515 /* Lagrangian.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45F1B4C18E5BF15005CE515 /* Lagrangian.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		D45F1B5618E5BF96005CE515 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45F1B5318E5BF5C005CE515 /* XCTest.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		D45F1B5718E5BFD8005CE515 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45F1B5318E5BF5C005CE515 /* XCTest.framework */; };
 		D45F1B5A18E5C023005CE515 /* Reducers.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D45F1B3A18E5B91C005CE515 /* Reducers.framework */; };
 		D45F1B5D18E5D649005CE515 /* PORKDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = D45F1B5C18E5D649005CE515 /* PORKDocument.m */; };
 		D45F1B6018E5D683005CE515 /* PORKPage.m in Sources */ = {isa = PBXBuildFile; fileRef = D45F1B5F18E5D683005CE515 /* PORKPage.m */; };
 		D45F1B6318E5D68D005CE515 /* PORKColumn.m in Sources */ = {isa = PBXBuildFile; fileRef = D45F1B6218E5D68D005CE515 /* PORKColumn.m */; };
 		D45F1B6618E5D696005CE515 /* PORKLine.m in Sources */ = {isa = PBXBuildFile; fileRef = D45F1B6518E5D695005CE515 /* PORKLine.m */; };
+		D46AB17918E6793A00501D3C /* Lagrangian.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D46AB17218E6790700501D3C /* Lagrangian.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,30 +71,30 @@
 			remoteGlobalIDString = D4ACA63618DDEC4900EBD899;
 			remoteInfo = Reducers;
 		};
-		D45F1B4B18E5BF15005CE515 /* PBXContainerItemProxy */ = {
+		D46AB17118E6790700501D3C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D45F1B4418E5BF15005CE515 /* Lagrangian.xcodeproj */;
+			containerPortal = D46AB16A18E6790700501D3C /* Lagrangian.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = D4B62B4C16A1581700E42C84;
 			remoteInfo = "Lagrangian (Mac OS X framework)";
 		};
-		D45F1B4D18E5BF15005CE515 /* PBXContainerItemProxy */ = {
+		D46AB17318E6790700501D3C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D45F1B4418E5BF15005CE515 /* Lagrangian.xcodeproj */;
+			containerPortal = D46AB16A18E6790700501D3C /* Lagrangian.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = D473F5CC16DA713E000FCD8D;
 			remoteInfo = "Lagrangian (iOS static framework)";
 		};
-		D45F1B4F18E5BF15005CE515 /* PBXContainerItemProxy */ = {
+		D46AB17518E6790700501D3C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D45F1B4418E5BF15005CE515 /* Lagrangian.xcodeproj */;
+			containerPortal = D46AB16A18E6790700501D3C /* Lagrangian.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = D46D2B4818E112360065701D;
 			remoteInfo = "Lagrangian (Mac Tests)";
 		};
-		D45F1B5118E5BF15005CE515 /* PBXContainerItemProxy */ = {
+		D46AB17718E6790700501D3C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D45F1B4418E5BF15005CE515 /* Lagrangian.xcodeproj */;
+			containerPortal = D46AB16A18E6790700501D3C /* Lagrangian.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = D4CE328618DF698300CADB65;
 			remoteInfo = "Lagrangian (iOS Test Stub)";
@@ -138,7 +137,6 @@
 		D45F1B2718E5ACFE005CE515 /* PorkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PorkTests.m; sourceTree = "<group>"; };
 		D45F1B3018E5ADF9005CE515 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		D45F1B3218E5B91C005CE515 /* Reducers.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Reducers.xcodeproj; path = External/Reducers/Reducers.xcodeproj; sourceTree = "<group>"; };
-		D45F1B4418E5BF15005CE515 /* Lagrangian.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Lagrangian.xcodeproj; path = External/Reducers/External/Lagrangian/Lagrangian.xcodeproj; sourceTree = "<group>"; };
 		D45F1B5318E5BF5C005CE515 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D45F1B5B18E5D649005CE515 /* PORKDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PORKDocument.h; sourceTree = "<group>"; };
 		D45F1B5C18E5D649005CE515 /* PORKDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PORKDocument.m; sourceTree = "<group>"; };
@@ -148,6 +146,7 @@
 		D45F1B6218E5D68D005CE515 /* PORKColumn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PORKColumn.m; sourceTree = "<group>"; };
 		D45F1B6418E5D695005CE515 /* PORKLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PORKLine.h; sourceTree = "<group>"; };
 		D45F1B6518E5D695005CE515 /* PORKLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PORKLine.m; sourceTree = "<group>"; };
+		D46AB16A18E6790700501D3C /* Lagrangian.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Lagrangian.xcodeproj; path = External/Lagrangian/Lagrangian.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,11 +154,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D45F1B5618E5BF96005CE515 /* XCTest.framework in Frameworks */,
-				D45F1B5518E5BF80005CE515 /* Lagrangian.framework in Frameworks */,
 				D45F1B4118E5B926005CE515 /* Reducers.framework in Frameworks */,
 				D45F1B3118E5ADF9005CE515 /* Quartz.framework in Frameworks */,
 				D45F1B0318E5ACFE005CE515 /* Cocoa.framework in Frameworks */,
+				D46AB17918E6793A00501D3C /* Lagrangian.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,9 +195,9 @@
 		D45F1AC018E5AB2A005CE515 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D45F1B5318E5BF5C005CE515 /* XCTest.framework */,
 				D45F1B3218E5B91C005CE515 /* Reducers.xcodeproj */,
-				D45F1B4418E5BF15005CE515 /* Lagrangian.xcodeproj */,
+				D46AB16A18E6790700501D3C /* Lagrangian.xcodeproj */,
+				D45F1B5318E5BF5C005CE515 /* XCTest.framework */,
 				D45F1B3018E5ADF9005CE515 /* Quartz.framework */,
 				D45F1AC118E5AB2A005CE515 /* Foundation.framework */,
 				D45F1AD418E5AB4D005CE515 /* Cocoa.framework */,
@@ -279,13 +277,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D45F1B4518E5BF15005CE515 /* Products */ = {
+		D46AB16B18E6790700501D3C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D45F1B4C18E5BF15005CE515 /* Lagrangian.framework */,
-				D45F1B4E18E5BF15005CE515 /* libLagrangian.a */,
-				D45F1B5018E5BF15005CE515 /* Lagrangian (Mac Tests).xctest */,
-				D45F1B5218E5BF15005CE515 /* Lagrangian (iOS Test Stub).xctest */,
+				D46AB17218E6790700501D3C /* Lagrangian.framework */,
+				D46AB17418E6790700501D3C /* libLagrangian.a */,
+				D46AB17618E6790700501D3C /* Lagrangian (Mac Tests).xctest */,
+				D46AB17818E6790700501D3C /* Lagrangian (iOS Test Stub).xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -357,8 +355,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = D45F1B4518E5BF15005CE515 /* Products */;
-					ProjectRef = D45F1B4418E5BF15005CE515 /* Lagrangian.xcodeproj */;
+					ProductGroup = D46AB16B18E6790700501D3C /* Products */;
+					ProjectRef = D46AB16A18E6790700501D3C /* Lagrangian.xcodeproj */;
 				},
 				{
 					ProductGroup = D45F1B3318E5B91C005CE515 /* Products */;
@@ -402,32 +400,32 @@
 			remoteRef = D45F1B3F18E5B91C005CE515 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D45F1B4C18E5BF15005CE515 /* Lagrangian.framework */ = {
+		D46AB17218E6790700501D3C /* Lagrangian.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Lagrangian.framework;
-			remoteRef = D45F1B4B18E5BF15005CE515 /* PBXContainerItemProxy */;
+			remoteRef = D46AB17118E6790700501D3C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D45F1B4E18E5BF15005CE515 /* libLagrangian.a */ = {
+		D46AB17418E6790700501D3C /* libLagrangian.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libLagrangian.a;
-			remoteRef = D45F1B4D18E5BF15005CE515 /* PBXContainerItemProxy */;
+			remoteRef = D46AB17318E6790700501D3C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D45F1B5018E5BF15005CE515 /* Lagrangian (Mac Tests).xctest */ = {
+		D46AB17618E6790700501D3C /* Lagrangian (Mac Tests).xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "Lagrangian (Mac Tests).xctest";
-			remoteRef = D45F1B4F18E5BF15005CE515 /* PBXContainerItemProxy */;
+			remoteRef = D46AB17518E6790700501D3C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D45F1B5218E5BF15005CE515 /* Lagrangian (iOS Test Stub).xctest */ = {
+		D46AB17818E6790700501D3C /* Lagrangian (iOS Test Stub).xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "Lagrangian (iOS Test Stub).xctest";
-			remoteRef = D45F1B5118E5BF15005CE515 /* PBXContainerItemProxy */;
+			remoteRef = D46AB17718E6790700501D3C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -608,12 +606,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_FRAMEWORKS_DIR)\"";
 				INFOPLIST_FILE = "Pork/Pork-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks $(FRAMEWORK_SEARCH_PATHS)";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -624,12 +619,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_FRAMEWORKS_DIR)\"";
 				INFOPLIST_FILE = "Pork/Pork-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks $(FRAMEWORK_SEARCH_PATHS)";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
