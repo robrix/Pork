@@ -40,6 +40,22 @@
 }
 
 
++(NSSet *)dictionaryWords {
+	static NSSet *dictionaryWords;
+	static dispatch_once_t onceToken;
+	dispatch_once(&onceToken, ^{
+		NSMutableArray *lines = [NSMutableArray new];
+		
+		[[NSString stringWithContentsOfFile:@"/usr/share/dict/words" encoding:NSUTF8StringEncoding error:NULL] enumerateLinesUsingBlock:^(NSString *line, BOOL *stop) {
+			[lines addObject:line];
+		}];
+		
+		dictionaryWords = [NSSet setWithArray:lines];
+	});
+	return dictionaryWords;
+}
+
+
 -(NSMutableString *)dehyphenateLine:(PORKLine *)line intoString:(NSMutableString *)string {
 	if ([string hasSuffix:@"-"]) {
 		[string replaceCharactersInRange:(NSRange){ .location = string.length - 1, .length = 1 } withString:line.string];
