@@ -66,6 +66,22 @@ l3_test(@selector(isDictionaryWord:)) {
 }
 
 
+-(NSString *)wordInString:(NSString *)string backwards:(bool)backwards {
+	NSRange range = [string rangeOfCharacterFromSet:[NSCharacterSet whitespaceAndNewlineCharacterSet] options:backwards ? NSBackwardsSearch : 0];
+	if (range.length == 0) range = backwards? (NSRange){ 0 } : (NSRange){ .location = string.length };
+	
+	return backwards?
+		[string substringWithRange:(NSRange){ .location = NSMaxRange(range), .length = (string.length - NSMaxRange(range)) - 1 }]
+	:	[string substringToIndex:range.location];
+}
+
+l3_test(@selector(wordInString:backwards:)) {
+	l3_expect([[PORKDocument new] wordInString:@"no fish-" backwards:YES]).to.equal(@"fish");
+	l3_expect([[PORKDocument new] wordInString:@"fish-" backwards:YES]).to.equal(@"fish");
+	l3_expect([[PORKDocument new] wordInString:@"cakes are great" backwards:NO]).to.equal(@"cakes");
+	l3_expect([[PORKDocument new] wordInString:@"cakes" backwards:NO]).to.equal(@"cakes");
+}
+
 
 -(NSMutableString *)dehyphenateLine:(PORKLine *)line intoString:(NSMutableString *)string {
 	if ([string hasSuffix:@"-"]) {
