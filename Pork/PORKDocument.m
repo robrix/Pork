@@ -40,11 +40,33 @@
 }
 
 
+-(NSMutableString *)dehyphenateLine:(PORKLine *)line intoString:(NSMutableString *)string {
+	if ([string hasSuffix:@"-"]) {
+		[string replaceCharactersInRange:(NSRange){ .location = string.length - 1, .length = 1 } withString:line.string];
+	} else if (string.length) {
+		[string appendString:@" "];
+		[string appendString:line.string];
+	} else {
+		string.string = line.string;
+	}
+	return string;
+}
+
+l3_test(@selector(dehyphenateLine:intoString:)) {
+	NSString *(^dehyphenate)(NSString *, NSString *) = ^(NSString *a, NSString *b) {
+		return [[PORKDocument new] dehyphenateLine:[[PORKLine alloc] initWithAttributedString:[[NSAttributedString alloc] initWithString:b] bounds:CGRectNull] intoString:[a mutableCopy]];
+	};
+	l3_expect(dehyphenate(@"", @"")).to.equal(@"");
+	l3_expect(dehyphenate(@"1", @"2")).to.equal(@"1 2");
+	l3_expect(dehyphenate(@"hyph-", @"enate")).to.equal(@"hyphenate");
+}
+
+
 // fixme: attributed string
 -(NSString *)string {
-	return [@"" red_append:REDFlattenMap(self.lines, ^(PORKLine *line) {
-		return @[ line.string, @"\n" ];
-	})];
+	return [self.lines red_reduce:[NSMutableString new] usingBlock:^(NSMutableString *into, PORKLine *line) {
+		return [self dehyphenateLine:line intoString:into];
+	}];
 }
 
 @end
