@@ -4,11 +4,21 @@
 
 @implementation PORKLine
 
+-(instancetype)initWithAttributedString:(NSAttributedString *)attributedString bounds:(CGRect)bounds {
+	NSParameterAssert(attributedString != nil);
+	
+	if ((self = [super init])) {
+		_attributedString = [attributedString copy];
+		_bounds = bounds;
+	}
+	return self;
+}
+
 -(instancetype)initWithSelection:(PDFSelection *)selection {
 	NSParameterAssert(selection != nil);
 	NSParameterAssert(selection.pages.count == 1);
 	
-	if ((self = [super init])) {
+	if ((self = [self initWithAttributedString:selection.attributedString bounds:[selection boundsForPage:selection.pages.firstObject]])) {
 		_selection = selection;
 		_page = selection.pages.firstObject;
 	}
@@ -17,17 +27,9 @@
 
 
 -(NSString *)string {
-	return self.selection.string;
+	return self.attributedString.string;
 }
 
--(NSAttributedString *)attributedString {
-	return self.selection.attributedString;
-}
-
-
--(CGRect)bounds {
-	return [self.selection boundsForPage:self.page];
-}
 
 -(CGFloat)top {
 	return CGRectGetMaxY(self.bounds);

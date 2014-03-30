@@ -4,6 +4,7 @@
 
 @interface PORKLine : NSObject
 
+-(instancetype)initWithAttributedString:(NSAttributedString *)attributedString bounds:(CGRect)bounds;
 -(instancetype)initWithSelection:(PDFSelection *)selection;
 
 @property (readonly) PDFPage *page;
