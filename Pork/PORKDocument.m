@@ -55,6 +55,17 @@
 	return dictionaryWords;
 }
 
+-(bool)isDictionaryWord:(NSString *)word {
+	return word != nil && [self.class.dictionaryWords containsObject:word];
+}
+
+l3_test(@selector(isDictionaryWord:)) {
+	l3_expect([[PORKDocument new] isDictionaryWord:@"context"]).to.equal(@YES);
+	l3_expect([[PORKDocument new] isDictionaryWord:@"free"]).to.equal(@YES);
+	l3_expect([[PORKDocument new] isDictionaryWord:@"hyph"]).to.equal(@NO);
+}
+
+
 
 -(NSMutableString *)dehyphenateLine:(PORKLine *)line intoString:(NSMutableString *)string {
 	if ([string hasSuffix:@"-"]) {
