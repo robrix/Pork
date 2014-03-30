@@ -14,18 +14,17 @@
 		D45F1B1218E5ACFE005CE515 /* PORKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D45F1B1118E5ACFE005CE515 /* PORKAppDelegate.m */; };
 		D45F1B1518E5ACFE005CE515 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D45F1B1318E5ACFE005CE515 /* MainMenu.xib */; };
 		D45F1B1718E5ACFE005CE515 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D45F1B1618E5ACFE005CE515 /* Images.xcassets */; };
-		D45F1B1E18E5ACFE005CE515 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45F1AD418E5AB4D005CE515 /* Cocoa.framework */; };
 		D45F1B2618E5ACFE005CE515 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D45F1B2418E5ACFE005CE515 /* InfoPlist.strings */; };
 		D45F1B2818E5ACFE005CE515 /* PorkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D45F1B2718E5ACFE005CE515 /* PorkTests.m */; };
 		D45F1B3118E5ADF9005CE515 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45F1B3018E5ADF9005CE515 /* Quartz.framework */; };
 		D45F1B4118E5B926005CE515 /* Reducers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45F1B3A18E5B91C005CE515 /* Reducers.framework */; };
-		D45F1B5718E5BFD8005CE515 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45F1B5318E5BF5C005CE515 /* XCTest.framework */; };
 		D45F1B5A18E5C023005CE515 /* Reducers.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D45F1B3A18E5B91C005CE515 /* Reducers.framework */; };
 		D45F1B5D18E5D649005CE515 /* PORKDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = D45F1B5C18E5D649005CE515 /* PORKDocument.m */; };
 		D45F1B6018E5D683005CE515 /* PORKPage.m in Sources */ = {isa = PBXBuildFile; fileRef = D45F1B5F18E5D683005CE515 /* PORKPage.m */; };
 		D45F1B6318E5D68D005CE515 /* PORKColumn.m in Sources */ = {isa = PBXBuildFile; fileRef = D45F1B6218E5D68D005CE515 /* PORKColumn.m */; };
 		D45F1B6618E5D696005CE515 /* PORKLine.m in Sources */ = {isa = PBXBuildFile; fileRef = D45F1B6518E5D695005CE515 /* PORKLine.m */; };
 		D46AB17918E6793A00501D3C /* Lagrangian.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D46AB17218E6790700501D3C /* Lagrangian.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D4AF77B518E7EEFA00D2ACE8 /* Lagrangian.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D46AB17218E6790700501D3C /* Lagrangian.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,8 +164,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D45F1B1E18E5ACFE005CE515 /* Cocoa.framework in Frameworks */,
-				D45F1B5718E5BFD8005CE515 /* XCTest.framework in Frameworks */,
+				D4AF77B518E7EEFA00D2ACE8 /* Lagrangian.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,8 +635,8 @@
 					"$(inherited)",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
 					"$(inherited)",
+					"L3_BUNDLE_LOADER=\\\"$(BUNDLE_LOADER)\\\"",
 				);
 				INFOPLIST_FILE = "PorkTests/PorkTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -655,6 +653,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"L3_BUNDLE_LOADER=\\\"$(BUNDLE_LOADER)\\\"",
 				);
 				INFOPLIST_FILE = "PorkTests/PorkTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
