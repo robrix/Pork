@@ -85,7 +85,11 @@ l3_test(@selector(wordInString:backwards:)) {
 
 -(NSMutableString *)dehyphenateLine:(PORKLine *)line intoString:(NSMutableString *)string {
 	if ([string hasSuffix:@"-"]) {
-		[string replaceCharactersInRange:(NSRange){ .location = string.length - 1, .length = 1 } withString:line.string];
+		if ([self isDictionaryWord:[self wordInString:string backwards:YES]] && [self isDictionaryWord:[self wordInString:line.string backwards:NO]]) {
+			[string appendString:line.string];
+		} else {
+			[string replaceCharactersInRange:(NSRange){ .location = string.length - 1, .length = 1 } withString:line.string];
+		}
 	} else if (string.length) {
 		[string appendString:@" "];
 		[string appendString:line.string];
@@ -102,6 +106,7 @@ l3_test(@selector(dehyphenateLine:intoString:)) {
 	l3_expect(dehyphenate(@"", @"")).to.equal(@"");
 	l3_expect(dehyphenate(@"1", @"2")).to.equal(@"1 2");
 	l3_expect(dehyphenate(@"hyph-", @"enate")).to.equal(@"hyphenate");
+	l3_expect(dehyphenate(@"context-", @"free")).to.equal(@"context-free");
 }
 
 
