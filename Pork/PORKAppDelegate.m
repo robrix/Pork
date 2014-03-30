@@ -22,11 +22,7 @@
 	if ([openPanel runModal] == NSOKButton) {
 		self.openedDocument = [[PORKDocument alloc] initWithDocument:self.PDFView.document = [[PDFDocument alloc] initWithURL:openPanel.URLs.firstObject]];
 		
-		NSString *appended = [@"" red_append:REDFlattenMap(self.openedDocument.lines, ^(PORKLine *line) {
-			return @[ line.string, @"\n" ];
-		})];
-		// fixme: attributed string instead
-		[self.textView.textStorage replaceCharactersInRange:(NSRange){ .length = self.textView.textStorage.length } withString:appended];
+		[self.textView.textStorage replaceCharactersInRange:(NSRange){ .length = self.textView.textStorage.length } withString:self.openedDocument.string];
 	}
 }
 

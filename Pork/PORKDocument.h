@@ -12,4 +12,6 @@
 
 @property (readonly) id<REDReducible> lines;
 
+@property (readonly) NSString *string;
+
 @end

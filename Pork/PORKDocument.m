@@ -24,6 +24,11 @@
 }
 
 
+-(PORKPage *)pageForLine:(PORKLine *)line {
+	return self.pages[[self.document indexForPage:line.page]];
+}
+
+
 -(id<REDReducible>)lines {
 	return REDFlattenMap(self.pages, ^id<REDReducible>(PORKPage *page) {
 		return page.lines;
@@ -35,8 +40,11 @@
 }
 
 
--(PORKPage *)pageForLine:(PORKLine *)line {
-	return self.pages[[self.document indexForPage:line.page]];
+// fixme: attributed string
+-(NSString *)string {
+	return [@"" red_append:REDFlattenMap(self.lines, ^(PORKLine *line) {
+		return @[ line.string, @"\n" ];
+	})];
 }
 
 @end
