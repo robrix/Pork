@@ -25,6 +25,12 @@ struct File {
 		return reduce(pages, []) { $0 + $1.lines }
 	}
 
+	var paragraphs: [Paragraph] {
+		return reduce(lines, []) {
+			$0 + [Paragraph(lines: [$1])]
+		}
+	}
+
 	var attributedString: NSAttributedString {
 		return reduce(lines, NSMutableAttributedString()) {
 			dehyphenateLine($1.attributedString, intoAttributedString: $0)
