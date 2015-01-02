@@ -42,6 +42,12 @@ struct File {
 }
 
 
+// Returns a slice consisting of all of `elements`.
+func slice<S: Sliceable>(elements: S) -> S.SubSlice {
+	return elements[elements.startIndex..<elements.endIndex]
+}
+
+
 // MARK: - Imports
 
 import Quartz
