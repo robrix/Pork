@@ -38,14 +38,8 @@
 		D45F1AD718E5AB4D005CE515 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D45F1AD818E5AB4D005CE515 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D45F1AD918E5AB4D005CE515 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		D45F1B0618E5ACFE005CE515 /* Pork-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pork-Info.plist"; sourceTree = "<group>"; };
-		D45F1B0818E5ACFE005CE515 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D45F1B0E18E5ACFE005CE515 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		D45F1B1618E5ACFE005CE515 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D45F1B3018E5ADF9005CE515 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		D45F1B5318E5BF5C005CE515 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		D4C9AB5D1A56DEF300CB61FB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D4C9AB5F1A56E0A800CB61FB /* Document.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
 		D4C9AB631A57044100CB61FB /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		D4C9AB651A57046000CB61FB /* Column.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Column.swift; sourceTree = "<group>"; };
 		D4C9AB671A57048800CB61FB /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
@@ -87,7 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				D4C9AB841A5706ED00CB61FB /* Pork */,
-				D45F1B0418E5ACFE005CE515 /* Pork */,
 				D4C9AB741A57067200CB61FB /* PorkTests */,
 				D45F1AC018E5AB2A005CE515 /* Frameworks */,
 				D45F1ABF18E5AB2A005CE515 /* Products */,
@@ -123,27 +116,6 @@
 				D45F1AD918E5AB4D005CE515 /* AppKit.framework */,
 			);
 			name = "Other Frameworks";
-			sourceTree = "<group>";
-		};
-		D45F1B0418E5ACFE005CE515 /* Pork */ = {
-			isa = PBXGroup;
-			children = (
-				D4C9AB5D1A56DEF300CB61FB /* AppDelegate.swift */,
-				D4C9AB5F1A56E0A800CB61FB /* Document.swift */,
-				D45F1B1618E5ACFE005CE515 /* Images.xcassets */,
-				D45F1B0518E5ACFE005CE515 /* Supporting Files */,
-			);
-			path = Pork;
-			sourceTree = "<group>";
-		};
-		D45F1B0518E5ACFE005CE515 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D45F1B0618E5ACFE005CE515 /* Pork-Info.plist */,
-				D45F1B0718E5ACFE005CE515 /* InfoPlist.strings */,
-				D45F1B0D18E5ACFE005CE515 /* Credits.rtf */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		D4C9AB741A57067200CB61FB /* PorkTests */ = {
@@ -322,22 +294,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D45F1B0718E5ACFE005CE515 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D45F1B0818E5ACFE005CE515 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		D45F1B0D18E5ACFE005CE515 /* Credits.rtf */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D45F1B0E18E5ACFE005CE515 /* en */,
-			);
-			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
 		D4C9AB8F1A5706ED00CB61FB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
