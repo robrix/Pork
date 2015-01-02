@@ -27,7 +27,7 @@ public func wordInString(string: String, #backwards: Bool) -> String {
 		}
 
 		return backwards ?
-			string.substringWithRange(range.endIndex..<string.endIndex.predecessor())
+				string.substringWithRange(range.endIndex..<string.endIndex.predecessor())
 			:	string.substringToIndex(range.startIndex)
 	}
 	return ""
