@@ -26,8 +26,8 @@ struct File {
 	}
 
 	var paragraphs: [Paragraph] {
-		return reduce(lines, []) {
-			$0 + [Paragraph(lines: [$1])]
+		return map(split(slice(lines), contiguous)) {
+			Paragraph(lines: Array($0))
 		}
 	}
 

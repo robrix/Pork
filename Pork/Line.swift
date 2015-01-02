@@ -23,6 +23,11 @@ public func < (left: Line, right: Line) -> Bool {
 }
 
 
+func contiguous(line1: Line, line2: Line) -> Bool {
+	return CGFloat.abs(line1.bounds.minY - line2.bounds.maxY) < 10
+}
+
+
 // MARK: - Imports
 
 import Quartz
