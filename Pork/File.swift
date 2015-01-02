@@ -22,7 +22,7 @@ struct File {
 	var pages: [Page] = []
 
 	var lines: [Line] {
-		get { return reduce(pages, []) { $0 + $1.lines } }
+		return reduce(pages, []) { $0 + $1.lines }
 	}
 
 	var attributedString: NSAttributedString {
