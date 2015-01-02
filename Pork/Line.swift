@@ -23,8 +23,38 @@ public func < (left: Line, right: Line) -> Bool {
 }
 
 
+let maximalProximity: CGFloat = 10
+
+func verticallyProximal(line1: Line, line2: Line) -> Bool {
+	return CGFloat.abs(line1.bounds.minY - line2.bounds.maxY) < maximalProximity
+}
+
+func horizontallyCoincident(line1: Line, line2: Line) -> Bool {
+	return CGFloat.abs(line1.bounds.width - line2.bounds.width) < maximalProximity
+}
+
+func alignedAtLeft(line1: Line, line2: Line) -> Bool {
+	return CGFloat.abs(line1.bounds.minX - line2.bounds.minX) < maximalProximity
+}
+
+func nonJustifiedTerminalLine(line1: Line, line2: Line) -> Bool {
+	return alignedAtLeft(line1, line2) && line1.bounds.width > line2.bounds.width
+}
+
+func typeSize(line: Line) -> CGFloat? {
+	let attributes = line.attributedString.fontAttributesInRange(NSRange(location: 0, length: 1))
+	let fontSize: CGFloat? = ((attributes[NSFontSizeAttribute] as? NSNumber)?.doubleValue).map { CGFloat($0) }
+	let font = (attributes[NSFontAttributeName] as? NSFont)
+	return fontSize ?? font?.pointSize
+}
+
+func sameTypeSize(line1: Line, line2: Line) -> Bool {
+	let (size1, size2) = (typeSize(line1), typeSize(line2))
+	return size1 == size2 || (size1.map { size1 in size2.map { size2 in CGFloat.abs(size1 - size2) < 1 } ?? false } ?? false)
+}
+
 func contiguous(line1: Line, line2: Line) -> Bool {
-	return CGFloat.abs(line1.bounds.minY - line2.bounds.maxY) < 10
+	return verticallyProximal(line1, line2) && (horizontallyCoincident(line1, line2) || nonJustifiedTerminalLine(line1, line2)) && sameTypeSize(line1, line2)
 }
 
 
