@@ -35,5 +35,4 @@ struct File {
 
 // MARK: - Imports
 
-import Cocoa
 import Quartz
