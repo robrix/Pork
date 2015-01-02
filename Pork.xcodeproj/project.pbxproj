@@ -7,112 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D45F1B0318E5ACFE005CE515 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45F1AD418E5AB4D005CE515 /* Cocoa.framework */; };
-		D45F1B0918E5ACFE005CE515 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D45F1B0718E5ACFE005CE515 /* InfoPlist.strings */; };
-		D45F1B0B18E5ACFE005CE515 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D45F1B0A18E5ACFE005CE515 /* main.m */; };
-		D45F1B0F18E5ACFE005CE515 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D45F1B0D18E5ACFE005CE515 /* Credits.rtf */; };
-		D45F1B1218E5ACFE005CE515 /* PORKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D45F1B1118E5ACFE005CE515 /* PORKAppDelegate.m */; };
-		D45F1B1518E5ACFE005CE515 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D45F1B1318E5ACFE005CE515 /* MainMenu.xib */; };
-		D45F1B1718E5ACFE005CE515 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D45F1B1618E5ACFE005CE515 /* Images.xcassets */; };
-		D45F1B2618E5ACFE005CE515 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D45F1B2418E5ACFE005CE515 /* InfoPlist.strings */; };
-		D45F1B2818E5ACFE005CE515 /* PorkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D45F1B2718E5ACFE005CE515 /* PorkTests.m */; };
-		D45F1B3118E5ADF9005CE515 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45F1B3018E5ADF9005CE515 /* Quartz.framework */; };
-		D45F1B4118E5B926005CE515 /* Reducers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45F1B3A18E5B91C005CE515 /* Reducers.framework */; };
-		D45F1B5A18E5C023005CE515 /* Reducers.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D45F1B3A18E5B91C005CE515 /* Reducers.framework */; };
-		D45F1B5D18E5D649005CE515 /* PORKDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = D45F1B5C18E5D649005CE515 /* PORKDocument.m */; };
-		D45F1B6018E5D683005CE515 /* PORKPage.m in Sources */ = {isa = PBXBuildFile; fileRef = D45F1B5F18E5D683005CE515 /* PORKPage.m */; };
-		D45F1B6318E5D68D005CE515 /* PORKColumn.m in Sources */ = {isa = PBXBuildFile; fileRef = D45F1B6218E5D68D005CE515 /* PORKColumn.m */; };
-		D45F1B6618E5D696005CE515 /* PORKLine.m in Sources */ = {isa = PBXBuildFile; fileRef = D45F1B6518E5D695005CE515 /* PORKLine.m */; };
-		D46AB17918E6793A00501D3C /* Lagrangian.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D46AB17218E6790700501D3C /* Lagrangian.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		D4AF77B518E7EEFA00D2ACE8 /* Lagrangian.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D46AB17218E6790700501D3C /* Lagrangian.framework */; };
+		D4C9AB881A5706ED00CB61FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C9AB871A5706ED00CB61FB /* AppDelegate.swift */; };
+		D4C9AB8C1A5706ED00CB61FB /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C9AB8B1A5706ED00CB61FB /* Document.swift */; };
+		D4C9AB8E1A5706ED00CB61FB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4C9AB8D1A5706ED00CB61FB /* Images.xcassets */; };
+		D4C9AB911A5706ED00CB61FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4C9AB8F1A5706ED00CB61FB /* Main.storyboard */; };
+		D4C9ABA41A57070F00CB61FB /* Hyphenation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C9AB6B1A5705A500CB61FB /* Hyphenation.swift */; };
+		D4C9ABA51A57070F00CB61FB /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C9AB631A57044100CB61FB /* Page.swift */; };
+		D4C9ABA61A57070F00CB61FB /* Column.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C9AB651A57046000CB61FB /* Column.swift */; };
+		D4C9ABA71A57070F00CB61FB /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C9AB671A57048800CB61FB /* Line.swift */; };
+		D4C9ABA81A57071C00CB61FB /* HyphenationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C9AB6D1A57060100CB61FB /* HyphenationTests.swift */; };
+		D4C9ABAC1A570C1100CB61FB /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C9ABAB1A570C1100CB61FB /* File.swift */; };
+		D4C9ABAE1A57109F00CB61FB /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C9ABAD1A57109F00CB61FB /* PDFViewController.swift */; };
+		D4C9ABB01A57118F00CB61FB /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C9ABAF1A57118F00CB61FB /* SplitViewController.swift */; };
+		D4C9ABB21A57126200CB61FB /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C9ABB11A57126200CB61FB /* TextViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D45F1B1F18E5ACFE005CE515 /* PBXContainerItemProxy */ = {
+		D4C9AB971A5706ED00CB61FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D45F1AB618E5AB2A005CE515 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D45F1B0118E5ACFE005CE515;
+			remoteGlobalIDString = D4C9AB821A5706ED00CB61FB;
 			remoteInfo = Pork;
 		};
-		D45F1B3918E5B91C005CE515 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D45F1B3218E5B91C005CE515 /* Reducers.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D4ACA63718DDEC4900EBD899;
-			remoteInfo = Reducers;
-		};
-		D45F1B3B18E5B91C005CE515 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D45F1B3218E5B91C005CE515 /* Reducers.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D4CE31F018DF598B00CADB65;
-			remoteInfo = "Reducers (iOS static framework)";
-		};
-		D45F1B3D18E5B91C005CE515 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D45F1B3218E5B91C005CE515 /* Reducers.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D46D2B6118E11E490065701D;
-			remoteInfo = "Reducers Mac Tests";
-		};
-		D45F1B3F18E5B91C005CE515 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D45F1B3218E5B91C005CE515 /* Reducers.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D46D2B7518E11E800065701D;
-			remoteInfo = "Reducers iOS Tests";
-		};
-		D45F1B4218E5B930005CE515 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D45F1B3218E5B91C005CE515 /* Reducers.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = D4ACA63618DDEC4900EBD899;
-			remoteInfo = Reducers;
-		};
-		D46AB17118E6790700501D3C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D46AB16A18E6790700501D3C /* Lagrangian.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D4B62B4C16A1581700E42C84;
-			remoteInfo = "Lagrangian (Mac OS X framework)";
-		};
-		D46AB17318E6790700501D3C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D46AB16A18E6790700501D3C /* Lagrangian.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D473F5CC16DA713E000FCD8D;
-			remoteInfo = "Lagrangian (iOS static framework)";
-		};
-		D46AB17518E6790700501D3C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D46AB16A18E6790700501D3C /* Lagrangian.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D46D2B4818E112360065701D;
-			remoteInfo = "Lagrangian (Mac Tests)";
-		};
-		D46AB17718E6790700501D3C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D46AB16A18E6790700501D3C /* Lagrangian.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D4CE328618DF698300CADB65;
-			remoteInfo = "Lagrangian (iOS Test Stub)";
-		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		D45F1B5918E5C000005CE515 /* Copy Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				D45F1B5A18E5C023005CE515 /* Reducers.framework in Copy Frameworks */,
-			);
-			name = "Copy Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D45F1AC118E5AB2A005CE515 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -120,51 +38,45 @@
 		D45F1AD718E5AB4D005CE515 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D45F1AD818E5AB4D005CE515 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D45F1AD918E5AB4D005CE515 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		D45F1B0218E5ACFE005CE515 /* Pork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D45F1B0618E5ACFE005CE515 /* Pork-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pork-Info.plist"; sourceTree = "<group>"; };
 		D45F1B0818E5ACFE005CE515 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D45F1B0A18E5ACFE005CE515 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D45F1B0C18E5ACFE005CE515 /* Pork-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pork-Prefix.pch"; sourceTree = "<group>"; };
 		D45F1B0E18E5ACFE005CE515 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		D45F1B1018E5ACFE005CE515 /* PORKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PORKAppDelegate.h; sourceTree = "<group>"; };
-		D45F1B1118E5ACFE005CE515 /* PORKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PORKAppDelegate.m; sourceTree = "<group>"; };
-		D45F1B1418E5ACFE005CE515 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		D45F1B1618E5ACFE005CE515 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D45F1B1C18E5ACFE005CE515 /* PorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PorkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D45F1B2318E5ACFE005CE515 /* PorkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PorkTests-Info.plist"; sourceTree = "<group>"; };
-		D45F1B2518E5ACFE005CE515 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D45F1B2718E5ACFE005CE515 /* PorkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PorkTests.m; sourceTree = "<group>"; };
 		D45F1B3018E5ADF9005CE515 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
-		D45F1B3218E5B91C005CE515 /* Reducers.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Reducers.xcodeproj; path = External/Reducers/Reducers.xcodeproj; sourceTree = "<group>"; };
 		D45F1B5318E5BF5C005CE515 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		D45F1B5B18E5D649005CE515 /* PORKDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PORKDocument.h; sourceTree = "<group>"; };
-		D45F1B5C18E5D649005CE515 /* PORKDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PORKDocument.m; sourceTree = "<group>"; };
-		D45F1B5E18E5D683005CE515 /* PORKPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PORKPage.h; sourceTree = "<group>"; };
-		D45F1B5F18E5D683005CE515 /* PORKPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PORKPage.m; sourceTree = "<group>"; };
-		D45F1B6118E5D68D005CE515 /* PORKColumn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PORKColumn.h; sourceTree = "<group>"; };
-		D45F1B6218E5D68D005CE515 /* PORKColumn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PORKColumn.m; sourceTree = "<group>"; };
-		D45F1B6418E5D695005CE515 /* PORKLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PORKLine.h; sourceTree = "<group>"; };
-		D45F1B6518E5D695005CE515 /* PORKLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PORKLine.m; sourceTree = "<group>"; };
-		D46AB16A18E6790700501D3C /* Lagrangian.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Lagrangian.xcodeproj; path = External/Lagrangian/Lagrangian.xcodeproj; sourceTree = "<group>"; };
+		D4C9AB5D1A56DEF300CB61FB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D4C9AB5F1A56E0A800CB61FB /* Document.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		D4C9AB631A57044100CB61FB /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		D4C9AB651A57046000CB61FB /* Column.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Column.swift; sourceTree = "<group>"; };
+		D4C9AB671A57048800CB61FB /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		D4C9AB6B1A5705A500CB61FB /* Hyphenation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hyphenation.swift; sourceTree = "<group>"; };
+		D4C9AB6D1A57060100CB61FB /* HyphenationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HyphenationTests.swift; sourceTree = "<group>"; };
+		D4C9AB761A57067200CB61FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4C9AB831A5706ED00CB61FB /* Pork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pork.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4C9AB861A5706ED00CB61FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4C9AB871A5706ED00CB61FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D4C9AB8B1A5706ED00CB61FB /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		D4C9AB8D1A5706ED00CB61FB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D4C9AB901A5706ED00CB61FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D4C9AB961A5706ED00CB61FB /* PorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PorkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4C9ABAB1A570C1100CB61FB /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		D4C9ABAD1A57109F00CB61FB /* PDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
+		D4C9ABAF1A57118F00CB61FB /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
+		D4C9ABB11A57126200CB61FB /* TextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D45F1AFF18E5ACFE005CE515 /* Frameworks */ = {
+		D4C9AB801A5706ED00CB61FB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D45F1B4118E5B926005CE515 /* Reducers.framework in Frameworks */,
-				D45F1B3118E5ADF9005CE515 /* Quartz.framework in Frameworks */,
-				D45F1B0318E5ACFE005CE515 /* Cocoa.framework in Frameworks */,
-				D46AB17918E6793A00501D3C /* Lagrangian.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D45F1B1918E5ACFE005CE515 /* Frameworks */ = {
+		D4C9AB931A5706ED00CB61FB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4AF77B518E7EEFA00D2ACE8 /* Lagrangian.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,8 +86,9 @@
 		D45F1AB518E5AB2A005CE515 = {
 			isa = PBXGroup;
 			children = (
+				D4C9AB841A5706ED00CB61FB /* Pork */,
 				D45F1B0418E5ACFE005CE515 /* Pork */,
-				D45F1B2118E5ACFE005CE515 /* PorkTests */,
+				D4C9AB741A57067200CB61FB /* PorkTests */,
 				D45F1AC018E5AB2A005CE515 /* Frameworks */,
 				D45F1ABF18E5AB2A005CE515 /* Products */,
 			);
@@ -184,8 +97,8 @@
 		D45F1ABF18E5AB2A005CE515 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D45F1B0218E5ACFE005CE515 /* Pork.app */,
-				D45F1B1C18E5ACFE005CE515 /* PorkTests.xctest */,
+				D4C9AB831A5706ED00CB61FB /* Pork.app */,
+				D4C9AB961A5706ED00CB61FB /* PorkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,8 +106,6 @@
 		D45F1AC018E5AB2A005CE515 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D45F1B3218E5B91C005CE515 /* Reducers.xcodeproj */,
-				D46AB16A18E6790700501D3C /* Lagrangian.xcodeproj */,
 				D45F1B5318E5BF5C005CE515 /* XCTest.framework */,
 				D45F1B3018E5ADF9005CE515 /* Quartz.framework */,
 				D45F1AC118E5AB2A005CE515 /* Foundation.framework */,
@@ -217,17 +128,8 @@
 		D45F1B0418E5ACFE005CE515 /* Pork */ = {
 			isa = PBXGroup;
 			children = (
-				D45F1B1018E5ACFE005CE515 /* PORKAppDelegate.h */,
-				D45F1B1118E5ACFE005CE515 /* PORKAppDelegate.m */,
-				D45F1B5B18E5D649005CE515 /* PORKDocument.h */,
-				D45F1B5C18E5D649005CE515 /* PORKDocument.m */,
-				D45F1B5E18E5D683005CE515 /* PORKPage.h */,
-				D45F1B5F18E5D683005CE515 /* PORKPage.m */,
-				D45F1B6118E5D68D005CE515 /* PORKColumn.h */,
-				D45F1B6218E5D68D005CE515 /* PORKColumn.m */,
-				D45F1B6418E5D695005CE515 /* PORKLine.h */,
-				D45F1B6518E5D695005CE515 /* PORKLine.m */,
-				D45F1B1318E5ACFE005CE515 /* MainMenu.xib */,
+				D4C9AB5D1A56DEF300CB61FB /* AppDelegate.swift */,
+				D4C9AB5F1A56E0A800CB61FB /* Document.swift */,
 				D45F1B1618E5ACFE005CE515 /* Images.xcassets */,
 				D45F1B0518E5ACFE005CE515 /* Supporting Files */,
 			);
@@ -239,91 +141,92 @@
 			children = (
 				D45F1B0618E5ACFE005CE515 /* Pork-Info.plist */,
 				D45F1B0718E5ACFE005CE515 /* InfoPlist.strings */,
-				D45F1B0A18E5ACFE005CE515 /* main.m */,
-				D45F1B0C18E5ACFE005CE515 /* Pork-Prefix.pch */,
 				D45F1B0D18E5ACFE005CE515 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D45F1B2118E5ACFE005CE515 /* PorkTests */ = {
+		D4C9AB741A57067200CB61FB /* PorkTests */ = {
 			isa = PBXGroup;
 			children = (
-				D45F1B2718E5ACFE005CE515 /* PorkTests.m */,
-				D45F1B2218E5ACFE005CE515 /* Supporting Files */,
+				D4C9AB6D1A57060100CB61FB /* HyphenationTests.swift */,
+				D4C9AB751A57067200CB61FB /* Supporting Files */,
 			);
 			path = PorkTests;
 			sourceTree = "<group>";
 		};
-		D45F1B2218E5ACFE005CE515 /* Supporting Files */ = {
+		D4C9AB751A57067200CB61FB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D45F1B2318E5ACFE005CE515 /* PorkTests-Info.plist */,
-				D45F1B2418E5ACFE005CE515 /* InfoPlist.strings */,
+				D4C9AB761A57067200CB61FB /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D45F1B3318E5B91C005CE515 /* Products */ = {
+		D4C9AB841A5706ED00CB61FB /* Pork */ = {
 			isa = PBXGroup;
 			children = (
-				D45F1B3A18E5B91C005CE515 /* Reducers.framework */,
-				D45F1B3C18E5B91C005CE515 /* libReducers.a */,
-				D45F1B3E18E5B91C005CE515 /* Reducers Mac Tests.xctest */,
-				D45F1B4018E5B91C005CE515 /* Reducers iOS Tests.xctest */,
+				D4C9AB871A5706ED00CB61FB /* AppDelegate.swift */,
+				D4C9AB8B1A5706ED00CB61FB /* Document.swift */,
+				D4C9ABAB1A570C1100CB61FB /* File.swift */,
+				D4C9AB6B1A5705A500CB61FB /* Hyphenation.swift */,
+				D4C9AB631A57044100CB61FB /* Page.swift */,
+				D4C9AB651A57046000CB61FB /* Column.swift */,
+				D4C9AB671A57048800CB61FB /* Line.swift */,
+				D4C9ABAD1A57109F00CB61FB /* PDFViewController.swift */,
+				D4C9ABAF1A57118F00CB61FB /* SplitViewController.swift */,
+				D4C9ABB11A57126200CB61FB /* TextViewController.swift */,
+				D4C9AB8D1A5706ED00CB61FB /* Images.xcassets */,
+				D4C9AB8F1A5706ED00CB61FB /* Main.storyboard */,
+				D4C9AB851A5706ED00CB61FB /* Supporting Files */,
 			);
-			name = Products;
+			path = Pork;
 			sourceTree = "<group>";
 		};
-		D46AB16B18E6790700501D3C /* Products */ = {
+		D4C9AB851A5706ED00CB61FB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D46AB17218E6790700501D3C /* Lagrangian.framework */,
-				D46AB17418E6790700501D3C /* libLagrangian.a */,
-				D46AB17618E6790700501D3C /* Lagrangian (Mac Tests).xctest */,
-				D46AB17818E6790700501D3C /* Lagrangian (iOS Test Stub).xctest */,
+				D4C9AB861A5706ED00CB61FB /* Info.plist */,
 			);
-			name = Products;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D45F1B0118E5ACFE005CE515 /* Pork */ = {
+		D4C9AB821A5706ED00CB61FB /* Pork */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D45F1B2918E5ACFE005CE515 /* Build configuration list for PBXNativeTarget "Pork" */;
+			buildConfigurationList = D4C9AB9E1A5706ED00CB61FB /* Build configuration list for PBXNativeTarget "Pork" */;
 			buildPhases = (
-				D45F1AFE18E5ACFE005CE515 /* Sources */,
-				D45F1AFF18E5ACFE005CE515 /* Frameworks */,
-				D45F1B0018E5ACFE005CE515 /* Resources */,
-				D45F1B5918E5C000005CE515 /* Copy Frameworks */,
+				D4C9AB7F1A5706ED00CB61FB /* Sources */,
+				D4C9AB801A5706ED00CB61FB /* Frameworks */,
+				D4C9AB811A5706ED00CB61FB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D45F1B4318E5B930005CE515 /* PBXTargetDependency */,
 			);
 			name = Pork;
 			productName = Pork;
-			productReference = D45F1B0218E5ACFE005CE515 /* Pork.app */;
+			productReference = D4C9AB831A5706ED00CB61FB /* Pork.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D45F1B1B18E5ACFE005CE515 /* PorkTests */ = {
+		D4C9AB951A5706ED00CB61FB /* PorkTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D45F1B2C18E5ACFE005CE515 /* Build configuration list for PBXNativeTarget "PorkTests" */;
+			buildConfigurationList = D4C9ABA11A5706ED00CB61FB /* Build configuration list for PBXNativeTarget "PorkTests" */;
 			buildPhases = (
-				D45F1B1818E5ACFE005CE515 /* Sources */,
-				D45F1B1918E5ACFE005CE515 /* Frameworks */,
-				D45F1B1A18E5ACFE005CE515 /* Resources */,
+				D4C9AB921A5706ED00CB61FB /* Sources */,
+				D4C9AB931A5706ED00CB61FB /* Frameworks */,
+				D4C9AB941A5706ED00CB61FB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D45F1B2018E5ACFE005CE515 /* PBXTargetDependency */,
+				D4C9AB981A5706ED00CB61FB /* PBXTargetDependency */,
 			);
 			name = PorkTests;
 			productName = PorkTests;
-			productReference = D45F1B1C18E5ACFE005CE515 /* PorkTests.xctest */;
+			productReference = D4C9AB961A5706ED00CB61FB /* PorkTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -335,8 +238,12 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Rob Rix";
 				TargetAttributes = {
-					D45F1B1B18E5ACFE005CE515 = {
-						TestTargetID = D45F1B0118E5ACFE005CE515;
+					D4C9AB821A5706ED00CB61FB = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					D4C9AB951A5706ED00CB61FB = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = D4C9AB821A5706ED00CB61FB;
 					};
 				};
 			};
@@ -351,139 +258,66 @@
 			mainGroup = D45F1AB518E5AB2A005CE515;
 			productRefGroup = D45F1ABF18E5AB2A005CE515 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = D46AB16B18E6790700501D3C /* Products */;
-					ProjectRef = D46AB16A18E6790700501D3C /* Lagrangian.xcodeproj */;
-				},
-				{
-					ProductGroup = D45F1B3318E5B91C005CE515 /* Products */;
-					ProjectRef = D45F1B3218E5B91C005CE515 /* Reducers.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
-				D45F1B0118E5ACFE005CE515 /* Pork */,
-				D45F1B1B18E5ACFE005CE515 /* PorkTests */,
+				D4C9AB821A5706ED00CB61FB /* Pork */,
+				D4C9AB951A5706ED00CB61FB /* PorkTests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		D45F1B3A18E5B91C005CE515 /* Reducers.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Reducers.framework;
-			remoteRef = D45F1B3918E5B91C005CE515 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D45F1B3C18E5B91C005CE515 /* libReducers.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libReducers.a;
-			remoteRef = D45F1B3B18E5B91C005CE515 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D45F1B3E18E5B91C005CE515 /* Reducers Mac Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Reducers Mac Tests.xctest";
-			remoteRef = D45F1B3D18E5B91C005CE515 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D45F1B4018E5B91C005CE515 /* Reducers iOS Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Reducers iOS Tests.xctest";
-			remoteRef = D45F1B3F18E5B91C005CE515 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D46AB17218E6790700501D3C /* Lagrangian.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Lagrangian.framework;
-			remoteRef = D46AB17118E6790700501D3C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D46AB17418E6790700501D3C /* libLagrangian.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libLagrangian.a;
-			remoteRef = D46AB17318E6790700501D3C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D46AB17618E6790700501D3C /* Lagrangian (Mac Tests).xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Lagrangian (Mac Tests).xctest";
-			remoteRef = D46AB17518E6790700501D3C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D46AB17818E6790700501D3C /* Lagrangian (iOS Test Stub).xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Lagrangian (iOS Test Stub).xctest";
-			remoteRef = D46AB17718E6790700501D3C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
-		D45F1B0018E5ACFE005CE515 /* Resources */ = {
+		D4C9AB811A5706ED00CB61FB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D45F1B0918E5ACFE005CE515 /* InfoPlist.strings in Resources */,
-				D45F1B1718E5ACFE005CE515 /* Images.xcassets in Resources */,
-				D45F1B0F18E5ACFE005CE515 /* Credits.rtf in Resources */,
-				D45F1B1518E5ACFE005CE515 /* MainMenu.xib in Resources */,
+				D4C9AB8E1A5706ED00CB61FB /* Images.xcassets in Resources */,
+				D4C9AB911A5706ED00CB61FB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D45F1B1A18E5ACFE005CE515 /* Resources */ = {
+		D4C9AB941A5706ED00CB61FB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D45F1B2618E5ACFE005CE515 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D45F1AFE18E5ACFE005CE515 /* Sources */ = {
+		D4C9AB7F1A5706ED00CB61FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D45F1B5D18E5D649005CE515 /* PORKDocument.m in Sources */,
-				D45F1B6318E5D68D005CE515 /* PORKColumn.m in Sources */,
-				D45F1B1218E5ACFE005CE515 /* PORKAppDelegate.m in Sources */,
-				D45F1B6018E5D683005CE515 /* PORKPage.m in Sources */,
-				D45F1B0B18E5ACFE005CE515 /* main.m in Sources */,
-				D45F1B6618E5D696005CE515 /* PORKLine.m in Sources */,
+				D4C9AB881A5706ED00CB61FB /* AppDelegate.swift in Sources */,
+				D4C9AB8C1A5706ED00CB61FB /* Document.swift in Sources */,
+				D4C9ABAC1A570C1100CB61FB /* File.swift in Sources */,
+				D4C9ABAE1A57109F00CB61FB /* PDFViewController.swift in Sources */,
+				D4C9ABA41A57070F00CB61FB /* Hyphenation.swift in Sources */,
+				D4C9ABB21A57126200CB61FB /* TextViewController.swift in Sources */,
+				D4C9ABB01A57118F00CB61FB /* SplitViewController.swift in Sources */,
+				D4C9ABA51A57070F00CB61FB /* Page.swift in Sources */,
+				D4C9ABA71A57070F00CB61FB /* Line.swift in Sources */,
+				D4C9ABA61A57070F00CB61FB /* Column.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D45F1B1818E5ACFE005CE515 /* Sources */ = {
+		D4C9AB921A5706ED00CB61FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D45F1B2818E5ACFE005CE515 /* PorkTests.m in Sources */,
+				D4C9ABA81A57071C00CB61FB /* HyphenationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D45F1B2018E5ACFE005CE515 /* PBXTargetDependency */ = {
+		D4C9AB981A5706ED00CB61FB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D45F1B0118E5ACFE005CE515 /* Pork */;
-			targetProxy = D45F1B1F18E5ACFE005CE515 /* PBXContainerItemProxy */;
-		};
-		D45F1B4318E5B930005CE515 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Reducers;
-			targetProxy = D45F1B4218E5B930005CE515 /* PBXContainerItemProxy */;
+			target = D4C9AB821A5706ED00CB61FB /* Pork */;
+			targetProxy = D4C9AB971A5706ED00CB61FB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -504,20 +338,12 @@
 			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
-		D45F1B1318E5ACFE005CE515 /* MainMenu.xib */ = {
+		D4C9AB8F1A5706ED00CB61FB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D45F1B1418E5ACFE005CE515 /* Base */,
+				D4C9AB901A5706ED00CB61FB /* Base */,
 			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		D45F1B2418E5ACFE005CE515 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D45F1B2518E5ACFE005CE515 /* en */,
-			);
-			name = InfoPlist.strings;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -543,10 +369,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pork/Pork-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -558,7 +381,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -585,83 +408,95 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Pork/Pork-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		D45F1B2A18E5ACFE005CE515 /* Debug */ = {
+		D4C9AB9F1A5706ED00CB61FB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_FRAMEWORKS_DIR)\"";
-				INFOPLIST_FILE = "Pork/Pork-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Pork/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		D45F1B2B18E5ACFE005CE515 /* Release */ = {
+		D4C9ABA01A5706ED00CB61FB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_FRAMEWORKS_DIR)\"";
-				INFOPLIST_FILE = "Pork/Pork-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = Pork/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
-		D45F1B2D18E5ACFE005CE515 /* Debug */ = {
+		D4C9ABA21A5706ED00CB61FB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Pork.app/Contents/MacOS/Pork";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
 					"$(inherited)",
-					"L3_BUNDLE_LOADER=\\\"$(BUNDLE_LOADER)\\\"",
 				);
-				INFOPLIST_FILE = "PorkTests/PorkTests-Info.plist";
+				INFOPLIST_FILE = PorkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pork.app/Contents/MacOS/Pork";
 			};
 			name = Debug;
 		};
-		D45F1B2E18E5ACFE005CE515 /* Release */ = {
+		D4C9ABA31A5706ED00CB61FB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Pork.app/Contents/MacOS/Pork";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
 				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"$(inherited)",
-					"L3_BUNDLE_LOADER=\\\"$(BUNDLE_LOADER)\\\"",
-				);
-				INFOPLIST_FILE = "PorkTests/PorkTests-Info.plist";
+				INFOPLIST_FILE = PorkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pork.app/Contents/MacOS/Pork";
 			};
 			name = Release;
 		};
@@ -677,23 +512,21 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D45F1B2918E5ACFE005CE515 /* Build configuration list for PBXNativeTarget "Pork" */ = {
+		D4C9AB9E1A5706ED00CB61FB /* Build configuration list for PBXNativeTarget "Pork" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D45F1B2A18E5ACFE005CE515 /* Debug */,
-				D45F1B2B18E5ACFE005CE515 /* Release */,
+				D4C9AB9F1A5706ED00CB61FB /* Debug */,
+				D4C9ABA01A5706ED00CB61FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		D45F1B2C18E5ACFE005CE515 /* Build configuration list for PBXNativeTarget "PorkTests" */ = {
+		D4C9ABA11A5706ED00CB61FB /* Build configuration list for PBXNativeTarget "PorkTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D45F1B2D18E5ACFE005CE515 /* Debug */,
-				D45F1B2E18E5ACFE005CE515 /* Release */,
+				D4C9ABA21A5706ED00CB61FB /* Debug */,
+				D4C9ABA31A5706ED00CB61FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -14,9 +14,23 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D45F1B0118E5ACFE005CE515"
+               BlueprintIdentifier = "D4C9AB821A5706ED00CB61FB"
                BuildableName = "Pork.app"
                BlueprintName = "Pork"
+               ReferencedContainer = "container:Pork.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D4C9AB951A5706ED00CB61FB"
+               BuildableName = "PorkTests.xctest"
+               BlueprintName = "PorkTests"
                ReferencedContainer = "container:Pork.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,7 +46,17 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D45F1B1B18E5ACFE005CE515"
+               BlueprintIdentifier = "D4C9AB721A57067200CB61FB"
+               BuildableName = "PorkTests.xctest"
+               BlueprintName = "PorkTests"
+               ReferencedContainer = "container:Pork.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D4C9AB951A5706ED00CB61FB"
                BuildableName = "PorkTests.xctest"
                BlueprintName = "PorkTests"
                ReferencedContainer = "container:Pork.xcodeproj">
@@ -42,7 +66,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D45F1B0118E5ACFE005CE515"
+            BlueprintIdentifier = "D4C9AB821A5706ED00CB61FB"
             BuildableName = "Pork.app"
             BlueprintName = "Pork"
             ReferencedContainer = "container:Pork.xcodeproj">
@@ -61,7 +85,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D45F1B0118E5ACFE005CE515"
+            BlueprintIdentifier = "D4C9AB821A5706ED00CB61FB"
             BuildableName = "Pork.app"
             BlueprintName = "Pork"
             ReferencedContainer = "container:Pork.xcodeproj">
@@ -79,7 +103,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D45F1B0118E5ACFE005CE515"
+            BlueprintIdentifier = "D4C9AB821A5706ED00CB61FB"
             BuildableName = "Pork.app"
             BlueprintName = "Pork"
             ReferencedContainer = "container:Pork.xcodeproj">

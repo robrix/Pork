@@ -1,8 +1,0 @@
-//  Copyright (c) 2014 Rob Rix. All rights reserved.
-
-#ifdef __OBJC__
-	#import <Cocoa/Cocoa.h>
-	#import <Quartz/Quartz.h>
-	#import <Reducers/Reducers.h>
-	#import <Lagrangian/Lagrangian.h>
-#endif
