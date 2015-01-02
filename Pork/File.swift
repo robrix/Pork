@@ -32,8 +32,11 @@ struct File {
 	}
 
 	var attributedString: NSAttributedString {
-		return reduce(lines, NSMutableAttributedString()) {
-			dehyphenateLine($1.attributedString, intoAttributedString: $0)
+		let separator = NSAttributedString(string: "\n\n")
+		return reduce(paragraphs, NSMutableAttributedString()) {
+			if $0.length > 0 { $0.appendAttributedString(separator) }
+			$0.appendAttributedString($1.attributedString)
+			return $0
 		}
 	}
 }
