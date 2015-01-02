@@ -20,6 +20,7 @@
 		D4C9ABAE1A57109F00CB61FB /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C9ABAD1A57109F00CB61FB /* PDFViewController.swift */; };
 		D4C9ABB01A57118F00CB61FB /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C9ABAF1A57118F00CB61FB /* SplitViewController.swift */; };
 		D4C9ABB21A57126200CB61FB /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C9ABB11A57126200CB61FB /* TextViewController.swift */; };
+		D4C9ABB41A571D2A00CB61FB /* Paragraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C9ABB31A571D2A00CB61FB /* Paragraph.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		D4C9ABAD1A57109F00CB61FB /* PDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
 		D4C9ABAF1A57118F00CB61FB /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 		D4C9ABB11A57126200CB61FB /* TextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		D4C9ABB31A571D2A00CB61FB /* Paragraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Paragraph.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				D4C9AB6B1A5705A500CB61FB /* Hyphenation.swift */,
 				D4C9AB631A57044100CB61FB /* Page.swift */,
 				D4C9AB651A57046000CB61FB /* Column.swift */,
+				D4C9ABB31A571D2A00CB61FB /* Paragraph.swift */,
 				D4C9AB671A57048800CB61FB /* Line.swift */,
 				D4C9ABAD1A57109F00CB61FB /* PDFViewController.swift */,
 				D4C9ABAF1A57118F00CB61FB /* SplitViewController.swift */,
@@ -264,6 +267,7 @@
 			files = (
 				D4C9AB881A5706ED00CB61FB /* AppDelegate.swift in Sources */,
 				D4C9AB8C1A5706ED00CB61FB /* Document.swift in Sources */,
+				D4C9ABB41A571D2A00CB61FB /* Paragraph.swift in Sources */,
 				D4C9ABAC1A570C1100CB61FB /* File.swift in Sources */,
 				D4C9ABAE1A57109F00CB61FB /* PDFViewController.swift in Sources */,
 				D4C9ABA41A57070F00CB61FB /* Hyphenation.swift in Sources */,
