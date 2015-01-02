@@ -27,7 +27,7 @@ struct File {
 
 	var attributedString: NSAttributedString {
 		return reduce(lines, NSMutableAttributedString()) {
-			dehyphenateLine($1, intoAttributedString: $0)
+			dehyphenateLine($1.attributedString, intoAttributedString: $0)
 		}
 	}
 }

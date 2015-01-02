@@ -1,17 +1,17 @@
 //  Copyright (c) 2015 Rob Rix. All rights reserved.
 
-public func dehyphenateLine(line: Line, intoAttributedString string: NSMutableAttributedString) -> NSMutableAttributedString {
+public func dehyphenateLine(line: NSAttributedString, intoAttributedString string: NSMutableAttributedString) -> NSMutableAttributedString {
 	if string.string.hasSuffix("-") {
-		if isDictionaryWord(wordInString(string.string, backwards: true)) && isDictionaryWord(wordInString(line.attributedString.string, backwards: false)) {
-			string.appendAttributedString(line.attributedString)
+		if isDictionaryWord(wordInString(string.string, backwards: true)) && isDictionaryWord(wordInString(line.string, backwards: false)) {
+			string.appendAttributedString(line)
 		} else {
-			string.replaceCharactersInRange(NSRange(location: string.length - 1, length: 1), withAttributedString: line.attributedString)
+			string.replaceCharactersInRange(NSRange(location: string.length - 1, length: 1), withAttributedString: line)
 		}
 	} else if string.length > 0 {
 		string.appendAttributedString(NSAttributedString(string: " "))
-		string.appendAttributedString(line.attributedString)
+		string.appendAttributedString(line)
 	} else {
-		string.appendAttributedString(line.attributedString)
+		string.appendAttributedString(line)
 	}
 	return string
 }
