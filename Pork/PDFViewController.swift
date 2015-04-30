@@ -2,7 +2,7 @@
 
 final class PDFViewController: NSViewController {
 	var pdfView: PDFView {
-		return view as PDFView
+		return view as! PDFView
 	}
 
 	override var representedObject: AnyObject? {
