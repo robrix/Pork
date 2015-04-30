@@ -23,18 +23,18 @@ public func < (left: Line, right: Line) -> Bool {
 }
 
 
-let maximalProximity: CGFloat = 10
+let maximalProximity: CGSize = CGSize(width: 10, height: 10)
 
 func verticallyProximal(line1: Line, line2: Line) -> Bool {
-	return CGFloat.abs(line1.bounds.minY - line2.bounds.maxY) < maximalProximity
+	return CGFloat.abs(line1.bounds.minY - line2.bounds.maxY) < maximalProximity.height
 }
 
 func horizontallyCoincident(line1: Line, line2: Line) -> Bool {
-	return CGFloat.abs(line1.bounds.width - line2.bounds.width) < maximalProximity
+	return CGFloat.abs(line1.bounds.width - line2.bounds.width) < maximalProximity.width
 }
 
 func alignedAtLeft(line1: Line, line2: Line) -> Bool {
-	return CGFloat.abs(line1.bounds.minX - line2.bounds.minX) < maximalProximity
+	return CGFloat.abs(line1.bounds.minX - line2.bounds.minX) < maximalProximity.width
 }
 
 func nonJustifiedTerminalLine(line1: Line, line2: Line) -> Bool {
