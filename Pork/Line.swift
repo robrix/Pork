@@ -23,7 +23,7 @@ public func < (left: Line, right: Line) -> Bool {
 }
 
 
-let maximalProximity: CGSize = CGSize(width: 10, height: 10)
+let maximalProximity: CGSize = CGSize(width: 30, height: 10)
 
 func verticallyProximal(line1: Line, line2: Line) -> Bool {
 	return CGFloat.abs(line1.bounds.minY - line2.bounds.maxY) < maximalProximity.height
