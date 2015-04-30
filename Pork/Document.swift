@@ -6,7 +6,7 @@ final class Document: NSDocument {
 
 	override func makeWindowControllers() {
 		let storyboard = NSStoryboard(name: "Main", bundle: nil)!
-		let windowController = storyboard.instantiateControllerWithIdentifier("Document Window Controller") as NSWindowController
+		let windowController = storyboard.instantiateControllerWithIdentifier("Document Window Controller") as! NSWindowController
 		windowController.contentViewController?.representedObject = self
 		addWindowController(windowController)
 	}
