@@ -21,7 +21,7 @@ final class TextViewController: NSViewController {
 
 infix operator >>= { associativity right }
 
-func >>= <T, U> (left: T?, right: T -> U?) -> U? {
+func >>= <T, U> (left: T?, right: T -> U) -> U? {
 	return left.map(right) ?? nil
 }
 
