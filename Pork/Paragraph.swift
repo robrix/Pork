@@ -3,8 +3,8 @@
 struct Paragraph {
 	var lines: [Line] = []
 
-	func attributedString(defaultAttributes: [String: NSObject]) -> NSAttributedString {
-		return reduce(lines, NSMutableAttributedString(string: "", attributes: defaultAttributes)) {
+	var attributedString: NSAttributedString {
+		return reduce(lines, NSMutableAttributedString(string: "")) {
 			dehyphenateLine($1.attributedString, intoAttributedString: $0)
 		}
 	}
