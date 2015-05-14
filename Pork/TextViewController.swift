@@ -13,19 +13,10 @@ final class TextViewController: NSViewController {
 		didSet {
 			let s = (representedObject as? Document)?.file?.attributedString
 			let f = textView.textStorage?.setAttributedString
-			f >>= { s >>= $0 }
+			f.flatMap { s.map($0) }
 		}
 	}
 }
 
-
-infix operator >>= { associativity right }
-
-func >>= <T, U> (left: T?, right: T -> U) -> U? {
-	return left.map(right) ?? nil
-}
-
-
-// MARK: - Imports
 
 import Cocoa
