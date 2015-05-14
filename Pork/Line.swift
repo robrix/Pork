@@ -7,8 +7,8 @@ public struct Line: Comparable {
 	}
 
 	init(_ selection: PDFSelection, _ defaultAttributes: [String: NSObject]) {
-		let string = NSMutableAttributedString(string: "", attributes: defaultAttributes)
-		string.appendAttributedString(selection.attributedString())
+		let string = selection.attributedString().mutableCopy() as! NSMutableAttributedString
+		string.addAttributes(defaultAttributes, range: NSRange(string))
 		self.init(string, selection.boundsForPage(selection.pages().first as! PDFPage))
 	}
 
