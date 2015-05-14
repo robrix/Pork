@@ -5,7 +5,7 @@ struct Paragraph {
 
 	var attributedString: NSAttributedString {
 		return reduce(lines, NSMutableAttributedString(string: "")) {
-			dehyphenateLine(recomposeDiacriticals($1.attributedString), intoAttributedString: $0)
+			dehyphenateLine(readjoinDecomposedDiacriticals($1.attributedString), intoAttributedString: $0)
 		}
 	}
 }

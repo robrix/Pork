@@ -1,6 +1,6 @@
 //  Copyright (c) 2015 Rob Rix. All rights reserved.
 
-public func recomposeDiacriticals(string: NSAttributedString) -> NSAttributedString {
+public func readjoinDecomposedDiacriticals(string: NSAttributedString) -> NSAttributedString {
 	return string
 }
 
