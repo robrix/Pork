@@ -36,7 +36,7 @@ struct File {
 		style.lineHeightMultiple = 1.3
 		style.lineBreakMode = .ByWordWrapping
 		style.paragraphSpacing = 30
-		style.firstLineHeadIndent = 20
+		style.firstLineHeadIndent = 15
 		style.tabStops = []
 		return style
 	}
