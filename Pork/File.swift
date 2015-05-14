@@ -41,6 +41,12 @@ struct File {
 		return style
 	}
 
+	var defaultAttributes: [String: NSObject] {
+		return [
+			NSParagraphStyleAttributeName: defaultParagraphStyle,
+		]
+	}
+
 	var attributedString: NSAttributedString {
 		let separator = NSAttributedString(string: "\n\n")
 		return reduce(paragraphs, NSMutableAttributedString()) {
