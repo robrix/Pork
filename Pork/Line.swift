@@ -14,6 +14,10 @@ public struct Line: Comparable {
 
 	let attributedString: NSAttributedString
 	let bounds: CGRect
+
+	var complete: Bool {
+		return attributedString.string.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()).hasSuffix(".")
+	}
 }
 
 public func == (left: Line, right: Line) -> Bool {
