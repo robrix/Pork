@@ -35,7 +35,7 @@ struct File {
 		let style = NSMutableParagraphStyle()
 		style.lineHeightMultiple = 1.3
 		style.lineBreakMode = .ByWordWrapping
-		style.paragraphSpacing = 30
+		style.paragraphSpacing = 15
 		style.firstLineHeadIndent = 15
 		style.tabStops = []
 		return style
