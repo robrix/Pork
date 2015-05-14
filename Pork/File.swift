@@ -31,6 +31,16 @@ struct File {
 		}
 	}
 
+	var defaultParagraphStyle: NSParagraphStyle {
+		let style = NSMutableParagraphStyle()
+		style.lineHeightMultiple = 1.3
+		style.lineBreakMode = .ByWordWrapping
+		style.paragraphSpacing = 30
+		style.firstLineHeadIndent = 20
+		style.tabStops = []
+		return style
+	}
+
 	var attributedString: NSAttributedString {
 		let separator = NSAttributedString(string: "\n\n")
 		return reduce(paragraphs, NSMutableAttributedString()) {
