@@ -21,6 +21,7 @@
 		D4C9ABB01A57118F00CB61FB /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C9ABAF1A57118F00CB61FB /* SplitViewController.swift */; };
 		D4C9ABB21A57126200CB61FB /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C9ABB11A57126200CB61FB /* TextViewController.swift */; };
 		D4C9ABB41A571D2A00CB61FB /* Paragraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C9ABB31A571D2A00CB61FB /* Paragraph.swift */; };
+		D4EE11AB1B04CA71002D9D9A /* NSRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EE11AA1B04CA71002D9D9A /* NSRange.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		D4C9ABAF1A57118F00CB61FB /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 		D4C9ABB11A57126200CB61FB /* TextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		D4C9ABB31A571D2A00CB61FB /* Paragraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Paragraph.swift; sourceTree = "<group>"; };
+		D4EE11AA1B04CA71002D9D9A /* NSRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSRange.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				D4C9AB861A5706ED00CB61FB /* Info.plist */,
+				D4EE11AA1B04CA71002D9D9A /* NSRange.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				D4C9ABB01A57118F00CB61FB /* SplitViewController.swift in Sources */,
 				D4C9ABA51A57070F00CB61FB /* Page.swift in Sources */,
 				D4C9ABA71A57070F00CB61FB /* Line.swift in Sources */,
+				D4EE11AB1B04CA71002D9D9A /* NSRange.swift in Sources */,
 				D4C9ABA61A57070F00CB61FB /* Column.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,6 +483,7 @@
 				D4C9ABA01A5706ED00CB61FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D4C9ABA11A5706ED00CB61FB /* Build configuration list for PBXNativeTarget "PorkTests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +492,7 @@
 				D4C9ABA31A5706ED00CB61FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
