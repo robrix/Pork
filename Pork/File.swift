@@ -6,7 +6,7 @@ struct File {
 		pages = map(0..<document.pageCount()) { Page(page: document.pageAtIndex($0)) }
 
 		for selection in document.selectionForEntireDocument().selectionsByLine() as! [PDFSelection] {
-			pages[document.indexForPage(selection.pages().first as! PDFPage)].addLine(Line(selection))
+			pages[document.indexForPage(selection.pages().first as! PDFPage)].addLine(Line(selection, defaultAttributes))
 		}
 
 		for (index, page) in enumerate(pages) {

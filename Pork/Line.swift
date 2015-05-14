@@ -6,8 +6,10 @@ public struct Line: Comparable {
 		self.bounds = bounds
 	}
 
-	init(_ selection: PDFSelection) {
-		self.init(selection.attributedString(), selection.boundsForPage(selection.pages().first as! PDFPage))
+	init(_ selection: PDFSelection, _ defaultAttributes: [String: NSObject]) {
+		let string = NSMutableAttributedString(string: "", attributes: defaultAttributes)
+		string.appendAttributedString(selection.attributedString())
+		self.init(string, selection.boundsForPage(selection.pages().first as! PDFPage))
 	}
 
 	let attributedString: NSAttributedString
