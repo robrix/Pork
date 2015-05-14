@@ -26,7 +26,7 @@ struct File {
 	}
 
 	var paragraphs: [Paragraph] {
-		return map(split(slice(lines), contiguous)) {
+		return map(split(lines[indices(lines)], contiguous)) {
 			Paragraph(lines: Array($0))
 		}
 	}
@@ -65,16 +65,8 @@ func split<S: Sliceable, R: BooleanType where S.SubSlice == S>(elements: S, cont
 			return [ elements[elements.startIndex..<index] ] + split(elements[index..<elements.endIndex], contiguous)
 		}
 	}
-	return [ slice(elements) ]
+	return [ elements[indices(elements)] ]
 }
 
-
-// Returns a slice consisting of all of `elements`.
-func slice<S: Sliceable>(elements: S) -> S.SubSlice {
-	return elements[elements.startIndex..<elements.endIndex]
-}
-
-
-// MARK: - Imports
 
 import Quartz
