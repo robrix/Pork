@@ -5,4 +5,7 @@ public func readjoinDecomposedDiacriticals(string: NSAttributedString) -> NSAttr
 }
 
 
+let separatedDiacriticalExpression = NSRegularExpression(pattern: "(\u{0020}[\u{0300}-\u{036f}])([aeiouAEIOU])?", options: nil, error: nil)
+
+
 import Cocoa
