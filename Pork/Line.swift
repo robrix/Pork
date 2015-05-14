@@ -60,7 +60,9 @@ func sameTypeSize(line1: Line, line2: Line) -> Bool {
 }
 
 func contiguous(line1: Line, line2: Line) -> Bool {
-	return verticallyProximal(line1, line2) && (horizontallyCoincident(line1, line2) || nonJustifiedTerminalLine(line1, line2)) && sameTypeSize(line1, line2)
+	return
+		verticallyProximal(line1, line2) && (horizontallyCoincident(line1, line2)
+	||	nonJustifiedTerminalLine(line1, line2)) && sameTypeSize(line1, line2)
 }
 
 
