@@ -49,7 +49,7 @@ struct File {
 
 	var attributedString: NSAttributedString {
 		let separator = NSAttributedString(string: "\n\n")
-		return reduce(paragraphs, NSMutableAttributedString()) {
+		return reduce(paragraphs, NSMutableAttributedString(string: "", attributes: defaultAttributes)) {
 			if $0.length > 0 { $0.appendAttributedString(separator) }
 			$0.appendAttributedString($1.attributedString)
 			return $0
