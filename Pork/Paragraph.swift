@@ -11,6 +11,4 @@ struct Paragraph {
 }
 
 
-// MARK: - Imports
-
 import Cocoa
