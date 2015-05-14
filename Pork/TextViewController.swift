@@ -16,6 +16,10 @@ final class TextViewController: NSViewController {
 			f.flatMap { s.map($0) }
 		}
 	}
+
+	override func viewDidLoad() {
+		textView.textContainerInset = NSSize(width: 50, height: 50)
+	}
 }
 
 
