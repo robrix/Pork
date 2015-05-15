@@ -65,6 +65,14 @@ func contiguous(line1: Line, line2: Line) -> Bool {
 	||	nonJustifiedTerminalLine(line1, line2)) && sameTypeSize(line1, line2)
 }
 
+func atEndOfColumn(line: ((index: Int, element: Page), (index: Int, element: Column), (index: Int, element: Line))) -> Bool {
+	return line.2.index + 1 == line.1.element.lines.count
+}
+
+func atStartOfColumn(line: ((index: Int, element: Page), (index: Int, element: Column), (index: Int, element: Line))) -> Bool {
+	return line.2.index == 0
+}
+
 
 // MARK: - Imports
 
