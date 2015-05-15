@@ -3,7 +3,7 @@
 final class SplitViewController: NSSplitViewController {
 	override var representedObject: AnyObject? {
 		didSet {
-			for each in childViewControllers as [NSViewController] {
+			for each in childViewControllers as! [NSViewController] {
 				each.representedObject = representedObject
 			}
 		}

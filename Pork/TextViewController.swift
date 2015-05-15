@@ -2,30 +2,25 @@
 
 final class TextViewController: NSViewController {
 	var scrollView: NSScrollView {
-		return view as NSScrollView
+		return view as! NSScrollView
 	}
 
 	var textView: NSTextView {
-		return scrollView.documentView as NSTextView
+		return scrollView.documentView as! NSTextView
 	}
 
 	override var representedObject: AnyObject? {
 		didSet {
 			let s = (representedObject as? Document)?.file?.attributedString
 			let f = textView.textStorage?.setAttributedString
-			f >>= { s >>= $0 }
+			f.flatMap { s.map($0) }
 		}
+	}
+
+	override func viewDidLoad() {
+		textView.textContainerInset = NSSize(width: 50, height: 50)
 	}
 }
 
-
-infix operator >>= { associativity right }
-
-func >>= <T, U> (left: T?, right: T -> U?) -> U? {
-	return left.map(right) ?? nil
-}
-
-
-// MARK: - Imports
 
 import Cocoa
