@@ -58,7 +58,7 @@ struct File {
 }
 
 
-func split<S: Sliceable, R: BooleanType where S.SubSlice == S>(elements: S, contiguous: (S.Generator.Element, S.Generator.Element) -> R) -> [S.SubSlice] {
+func split<S: Sliceable where S.SubSlice == S>(elements: S, contiguous: (S.Generator.Element, S.Generator.Element) -> Bool) -> [S.SubSlice] {
 	for index in elements.startIndex.successor()..<elements.endIndex {
 		let (previous, current) = (elements[advance(elements.startIndex, distance(elements.startIndex, index) - 1)], elements[index])
 		if !contiguous(previous, current) {
