@@ -31,8 +31,10 @@ public func < (left: Line, right: Line) -> Bool {
 
 let maximalProximity: CGSize = CGSize(width: 20, height: 10)
 
-func verticallyProximal(line1: Line, line2: Line) -> Bool {
-	return CGFloat.abs(line1.bounds.minY - line2.bounds.maxY) < maximalProximity.height
+func verticallyProximal(line1: ((index: Int, element: Column), (index: Int, element: Line)), line2: ((index: Int, element: Column), (index: Int, element: Line))) -> Bool {
+	return
+		CGFloat.abs(line1.1.element.bounds.minY - line2.1.element.bounds.maxY) < maximalProximity.height
+	||	(!line1.1.element.complete && inSuccessiveColumns(line1, line2) && atEndOfColumn(line1) && atStartOfColumn(line2))
 }
 
 func horizontallyCoincident(line1: Line, line2: Line) -> Bool {
@@ -73,9 +75,8 @@ func atStartOfColumn(line: ((index: Int, element: Column), (index: Int, element:
 
 func contiguous(line1: ((index: Int, element: Column), (index: Int, element: Line)), line2: ((index: Int, element: Column), (index: Int, element: Line))) -> Bool {
 	return
-		(verticallyProximal(line1.1.element, line2.1.element) && (horizontallyCoincident(line1.1.element, line2.1.element))
+		(verticallyProximal(line1, line2) && (horizontallyCoincident(line1.1.element, line2.1.element))
 	||	(nonJustifiedTerminalLine(line1.1.element, line2.1.element)) && sameTypeSize(line1.1.element, line2.1.element))
-	||	(!line1.1.element.complete && inSuccessiveColumns(line1, line2) && atEndOfColumn(line1) && atStartOfColumn(line2))
 }
 
 
