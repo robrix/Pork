@@ -39,8 +39,8 @@ func verticallyProximal(line1: LineContext, line2: LineContext) -> Bool {
 	||	(!line1.line.element.complete && inSuccessiveColumns(line1, line2) && atEndOfColumn(line1) && atStartOfColumn(line2))
 }
 
-func horizontallyCoincident(line1: Line, line2: Line) -> Bool {
-	return CGFloat.abs(line1.bounds.width - line2.bounds.width) < maximalProximity.width
+func horizontallyCoincident(line1: LineContext, line2: LineContext) -> Bool {
+	return CGFloat.abs(line1.line.element.bounds.width - line2.line.element.bounds.width) < maximalProximity.width
 }
 
 func alignedAtLeft(line1: Line, line2: Line) -> Bool {
@@ -78,7 +78,7 @@ func atStartOfColumn(line: LineContext) -> Bool {
 func contiguous(line1: LineContext, line2: LineContext) -> Bool {
 	if !verticallyProximal(line1, line2) { return false }
 	return
-		horizontallyCoincident(line1.line.element, line2.line.element)
+		horizontallyCoincident(line1, line2)
 	||	nonJustifiedTerminalLine(line1.line.element, line2.line.element) && sameTypeSize(line1.line.element, line2.line.element)
 }
 
