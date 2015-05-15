@@ -40,7 +40,10 @@ func verticallyProximal(line1: LineContext, line2: LineContext) -> Bool {
 }
 
 func horizontallyCoincident(line1: LineContext, line2: LineContext) -> Bool {
-	return CGFloat.abs(line1.line.element.bounds.width - line2.line.element.bounds.width) < maximalProximity.width
+	return
+		CGFloat.abs(line1.column.element.bounds.width - line2.column.element.bounds.width) < maximalProximity.width
+	&&	CGFloat.abs(line1.column.element.bounds.width - line1.line.element.bounds.width) < maximalProximity.width
+	&&	CGFloat.abs(line2.column.element.bounds.width - line2.line.element.bounds.width) < maximalProximity.width
 }
 
 func alignedAtLeft(line1: Line, line2: Line) -> Bool {
