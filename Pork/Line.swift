@@ -74,9 +74,10 @@ func atStartOfColumn(line: ((index: Int, element: Column), (index: Int, element:
 }
 
 func contiguous(line1: ((index: Int, element: Column), (index: Int, element: Line)), line2: ((index: Int, element: Column), (index: Int, element: Line))) -> Bool {
+	if !verticallyProximal(line1, line2) { return false }
 	return
-		(verticallyProximal(line1, line2) && (horizontallyCoincident(line1.1.element, line2.1.element))
-	||	(nonJustifiedTerminalLine(line1.1.element, line2.1.element)) && sameTypeSize(line1.1.element, line2.1.element))
+		horizontallyCoincident(line1.1.element, line2.1.element)
+	||	nonJustifiedTerminalLine(line1.1.element, line2.1.element) && sameTypeSize(line1.1.element, line2.1.element)
 }
 
 
