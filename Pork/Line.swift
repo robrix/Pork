@@ -31,7 +31,7 @@ public func < (left: Line, right: Line) -> Bool {
 
 let maximalProximity: CGSize = CGSize(width: 20, height: 10)
 
-typealias LineContext = ((index: Int, element: Column), (index: Int, element: Line))
+typealias LineContext = (column: (index: Int, element: Column), line: (index: Int, element: Line))
 
 func verticallyProximal(line1: LineContext, line2: LineContext) -> Bool {
 	return
