@@ -26,7 +26,6 @@ struct File {
 	}
 
 	var paragraphs: [Paragraph] {
-
 		let lines: [((Int, Column), (Int, Line))] = reduce(enumerate(flatMap(pages) { $0.columns }), []) { all, column in
 			all + map(enumerate(column.element.lines)) {
 				(column, $0)
