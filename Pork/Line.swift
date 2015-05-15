@@ -35,8 +35,8 @@ typealias LineContext = (column: (index: Int, element: Column), line: (index: In
 
 func verticallyProximal(line1: LineContext, line2: LineContext) -> Bool {
 	return
-		CGFloat.abs(line1.1.element.bounds.minY - line2.1.element.bounds.maxY) < maximalProximity.height
-	||	(!line1.1.element.complete && inSuccessiveColumns(line1, line2) && atEndOfColumn(line1) && atStartOfColumn(line2))
+		CGFloat.abs(line1.line.element.bounds.minY - line2.line.element.bounds.maxY) < maximalProximity.height
+	||	(!line1.line.element.complete && inSuccessiveColumns(line1, line2) && atEndOfColumn(line1) && atStartOfColumn(line2))
 }
 
 func horizontallyCoincident(line1: Line, line2: Line) -> Bool {
@@ -64,22 +64,22 @@ func sameTypeSize(line1: Line, line2: Line) -> Bool {
 }
 
 func inSuccessiveColumns(line1: LineContext, line2: LineContext) -> Bool {
-	return line1.0.index + 1 == line2.0.index
+	return line1.column.index + 1 == line2.column.index
 }
 
 func atEndOfColumn(line: LineContext) -> Bool {
-	return line.1.index + 1 == line.0.element.lines.count
+	return line.line.index + 1 == line.column.element.lines.count
 }
 
 func atStartOfColumn(line: LineContext) -> Bool {
-	return line.1.index == 0
+	return line.line.index == 0
 }
 
 func contiguous(line1: LineContext, line2: LineContext) -> Bool {
 	if !verticallyProximal(line1, line2) { return false }
 	return
-		horizontallyCoincident(line1.1.element, line2.1.element)
-	||	nonJustifiedTerminalLine(line1.1.element, line2.1.element) && sameTypeSize(line1.1.element, line2.1.element)
+		horizontallyCoincident(line1.line.element, line2.line.element)
+	||	nonJustifiedTerminalLine(line1.line.element, line2.line.element) && sameTypeSize(line1.line.element, line2.line.element)
 }
 
 
