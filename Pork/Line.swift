@@ -46,7 +46,7 @@ func alignedAtLeft(line1: Line, line2: Line) -> Bool {
 }
 
 func nonJustifiedTerminalLine(line1: Line, line2: Line) -> Bool {
-	return alignedAtLeft(line1, line2) && line1.bounds.width > (line2.bounds.width - maximalProximity.width)
+	return alignedAtLeft(line1, line2) && line1.bounds.width > (line2.bounds.width + maximalProximity.width)
 }
 
 func typeSize(line: Line) -> CGFloat? {
