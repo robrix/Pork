@@ -26,15 +26,14 @@ struct File {
 	}
 
 	var paragraphs: [Paragraph] {
-		let lines: [((Int, Page), (Int, Column), (Int, Line))] = reduce(enumerate(pages), []) { all, page in
-			all + flatMap(enumerate(page.element.columns)) { column in
-				map(enumerate(column.element.lines)) {
-					(page, column, $0)
-				}
+
+		let lines: [((Int, Column), (Int, Line))] = reduce(enumerate(flatMap(pages) { $0.columns }), []) { all, column in
+			all + map(enumerate(column.element.lines)) {
+				(column, $0)
 			}
 		}
 		return map(split(lines[indices(lines)], contiguous)) {
-			Paragraph(lines: Array(map($0) { $0.2.1 }))
+			Paragraph(lines: Array(map($0) { $0.1.1 }))
 		}
 	}
 

@@ -59,25 +59,23 @@ func sameTypeSize(line1: Line, line2: Line) -> Bool {
 	return size1 == size2 || (size1.map { size1 in size2.map { size2 in CGFloat.abs(size1 - size2) < 1 } ?? false } ?? false)
 }
 
-func inSuccessiveColumns(line1: ((index: Int, element: Page), (index: Int, element: Column), (index: Int, element: Line)), line2: ((index: Int, element: Page), (index: Int, element: Column), (index: Int, element: Line))) -> Bool {
+func inSuccessiveColumns(line1: ((index: Int, element: Column), (index: Int, element: Line)), line2: ((index: Int, element: Column), (index: Int, element: Line))) -> Bool {
+	return line1.0.index + 1 == line2.0.index
+}
+
+func atEndOfColumn(line: ((index: Int, element: Column), (index: Int, element: Line))) -> Bool {
+	return line.1.index + 1 == line.0.element.lines.count
+}
+
+func atStartOfColumn(line: ((index: Int, element: Column), (index: Int, element: Line))) -> Bool {
+	return line.1.index == 0
+}
+
+func contiguous(line1: ((index: Int, element: Column), (index: Int, element: Line)), line2: ((index: Int, element: Column), (index: Int, element: Line))) -> Bool {
 	return
-		line1.0.index == line2.0.index && line1.1.index + 1 == line2.1.index
-	||	line1.0.index + 1 == line2.0.index && line1.1.index + 1 == line1.0.element.columns.count && line2.1.index == 0
-}
-
-func atEndOfColumn(line: ((index: Int, element: Page), (index: Int, element: Column), (index: Int, element: Line))) -> Bool {
-	return line.2.index + 1 == line.1.element.lines.count
-}
-
-func atStartOfColumn(line: ((index: Int, element: Page), (index: Int, element: Column), (index: Int, element: Line))) -> Bool {
-	return line.2.index == 0
-}
-
-func contiguous(line1: ((index: Int, element: Page), (index: Int, element: Column), (index: Int, element: Line)), line2: ((index: Int, element: Page), (index: Int, element: Column), (index: Int, element: Line))) -> Bool {
-	return
-		verticallyProximal(line1.2.element, line2.2.element) && (horizontallyCoincident(line1.2.element, line2.2.element)
-	||	nonJustifiedTerminalLine(line1.2.element, line2.2.element)) && sameTypeSize(line1.2.element, line2.2.element)
-	||	!line1.2.element.complete && inSuccessiveColumns(line1, line2) && atEndOfColumn(line1) && atStartOfColumn(line2)
+		(verticallyProximal(line1.1.element, line2.1.element) && (horizontallyCoincident(line1.1.element, line2.1.element))
+	||	(nonJustifiedTerminalLine(line1.1.element, line2.1.element)) && sameTypeSize(line1.1.element, line2.1.element))
+	||	(!line1.1.element.complete && inSuccessiveColumns(line1, line2) && atEndOfColumn(line1) && atStartOfColumn(line2))
 }
 
 
