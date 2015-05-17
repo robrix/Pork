@@ -52,16 +52,19 @@ func nonJustifiedTerminalLine(line1: Line, line2: Line) -> Bool {
 	return alignedAtLeft(line1, line2) && line1.bounds.width > (line2.bounds.width + maximalProximity.width)
 }
 
-func typeSize(line: Line) -> CGFloat? {
-	let attributes = line.attributedString.fontAttributesInRange(NSRange(location: 0, length: 1))
-	let fontSize: CGFloat? = ((attributes[NSFontSizeAttribute] as? NSNumber)?.doubleValue).map { CGFloat($0) }
-	let font = (attributes[NSFontAttributeName] as? NSFont)
-	return fontSize ?? font?.pointSize
+func lineHeight(line: Line) -> CGFloat {
+	var size = line.bounds.height
+	line.attributedString.enumerateAttributesInRange(NSRange(line.attributedString), options: nil) { attributes, _, _ in
+		let fontSize: CGFloat? = ((attributes[NSFontSizeAttribute] as? NSNumber)?.doubleValue).map { CGFloat($0) }
+		let font = attributes[NSFontAttributeName] as? NSFont
+		if let s = fontSize ?? font?.pointSize { size = max(size, s) }
+	}
+	return round(size)
 }
 
-func sameTypeSize(line1: Line, line2: Line) -> Bool {
-	let (size1, size2) = (typeSize(line1), typeSize(line2))
-	return size1 == size2 || (size1.map { size1 in size2.map { size2 in CGFloat.abs(size1 - size2) < 1 } ?? false } ?? false)
+func sameLineHeight(line1: Line, line2: Line) -> Bool {
+	let (size1, size2) = (lineHeight(line1), lineHeight(line2))
+	return abs(size1 - size2) < 1
 }
 
 func inSuccessiveColumns(line1: LineContext, line2: LineContext) -> Bool {
@@ -78,9 +81,10 @@ func atStartOfColumn(line: LineContext) -> Bool {
 
 func contiguous(line1: LineContext, line2: LineContext) -> Bool {
 	if !verticallyProximal(line1, line2) { return false }
+	if !sameLineHeight(line1.line.element, line2.line.element) { return false }
 	return
 		horizontallyCoincident(line1, line2)
-	||	nonJustifiedTerminalLine(line1.line.element, line2.line.element) && sameTypeSize(line1.line.element, line2.line.element)
+	||	nonJustifiedTerminalLine(line1.line.element, line2.line.element)
 }
 
 
