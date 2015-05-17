@@ -65,7 +65,7 @@ func lineHeight(line: Line) -> CGFloat {
 
 func sameLineHeight(line1: Line, line2: Line) -> Bool {
 	let (size1, size2) = (lineHeight(line1), lineHeight(line2))
-	return abs(size1 - size2) < 1
+	return abs(size1 - size2) < 5
 }
 
 func inSuccessiveColumns(line1: LineContext, line2: LineContext) -> Bool {
