@@ -670,7 +670,7 @@
             <objects>
                 <splitViewController id="kAo-NR-QbU" customClass="SplitViewController" customModule="Pork" customModuleProvider="target" sceneMemberID="viewController">
                     <splitViewItems>
-                        <splitViewItem id="axY-Kr-p6s"/>
+                        <splitViewItem canCollapse="YES" collapsed="YES" id="axY-Kr-p6s"/>
                         <splitViewItem id="oYo-4H-JlP"/>
                     </splitViewItems>
                     <splitView key="splitView" autosaveName="SplitView" dividerStyle="thin" vertical="YES" id="E05-BY-jOX">
