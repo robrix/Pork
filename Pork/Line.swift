@@ -32,8 +32,9 @@ let maximalProximity: CGSize = CGSize(width: 20, height: 10)
 typealias LineContext = (column: (index: Int, element: Column), line: (index: Int, element: Line))
 
 func verticallyProximal(line1: LineContext, line2: LineContext) -> Bool {
+	let proximity = max(lineHeight(line1.line.element), lineHeight(line2.line.element), maximalProximity.height)
 	return
-		CGFloat.abs(line1.line.element.bounds.minY - line2.line.element.bounds.maxY) < maximalProximity.height
+		CGFloat.abs(line1.line.element.bounds.minY - line2.line.element.bounds.maxY) < proximity
 	||	(!line1.line.element.complete && inSuccessiveColumns(line1, line2) && atEndOfColumn(line1) && atStartOfColumn(line2))
 }
 
