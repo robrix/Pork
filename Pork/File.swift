@@ -66,7 +66,7 @@ struct File {
 func split<S: Sliceable where S.SubSlice == S>(elements: S, contiguous: (S.Generator.Element, S.Generator.Element) -> Bool) -> [S.SubSlice] {
 	if isEmpty(elements) { return [] }
 	for index in elements.startIndex.successor()..<elements.endIndex {
-		let (previous, current) = (elements[advance(elements.startIndex, distance(elements.startIndex, index) - 1)], elements[index])
+		let (previous, current) = (elements[advance(elements.startIndex, distance(elements.startIndex, index) - 1, elements.endIndex)], elements[index])
 		if !contiguous(previous, current) {
 			return [ elements[elements.startIndex..<index] ] + split(elements[index..<elements.endIndex], contiguous)
 		}
