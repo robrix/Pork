@@ -22,6 +22,16 @@ final class PDFViewController: NSViewController {
 						pdfPage.addAnnotation(annotation)
 					}
 				}
+
+				for paragraph in file.paragraphs {
+					if let selection = paragraph.selection {
+						for page in selection.pages() as! [PDFPage] {
+							let annotation = PDFAnnotationSquare(bounds: selection.boundsForPage(page))
+							annotation.setColor(NSColor.blueColor())
+							page.addAnnotation(annotation)
+						}
+					}
+				}
 			}
 		}
 	}
