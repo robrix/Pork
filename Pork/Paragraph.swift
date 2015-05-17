@@ -8,7 +8,18 @@ struct Paragraph {
 			dehyphenateLine(readjoinDecomposedDiacriticals($1.attributedString), intoAttributedString: $0)
 		}
 	}
+
+	var selection: PDFSelection? {
+		let selections = lazy(lines).map { $0.selection }
+		if let document = (selections.first?.pages() as? [PDFPage])?.first?.document() {
+			let selection = PDFSelection(document: document)
+			selection.addSelections(selections.array)
+			return selection
+		}
+		return nil
+	}
 }
 
 
 import Cocoa
+import Quartz
