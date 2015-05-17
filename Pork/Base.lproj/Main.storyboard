@@ -686,10 +686,10 @@
             </objects>
             <point key="canvasLocation" x="-122" y="628"/>
         </scene>
-        <!--View Controller-->
+        <!--PDF View Controller-->
         <scene sceneID="gH2-TJ-WkJ">
             <objects>
-                <viewController id="yfQ-nP-vsc" customClass="PDFViewController" customModule="Pork" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="yfQ-nP-vsc" userLabel="PDF View Controller" customClass="PDFViewController" customModule="Pork" customModuleProvider="target" sceneMemberID="viewController">
                     <pdfView key="view" autoresizesSubviews="NO" wantsLayer="YES" autoScales="YES" id="End-nc-qtR">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
