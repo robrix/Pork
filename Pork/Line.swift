@@ -80,11 +80,20 @@ func atStartOfColumn(line: LineContext) -> Bool {
 	return line.line.index == 0
 }
 
+func centred(line: LineContext) -> Bool {
+	let (columnBounds, lineBounds) = (line.column.element.bounds, line.line.element.bounds)
+	let centred =
+		CGFloat.abs(columnBounds.width - lineBounds.width) > maximalProximity.width
+	&&	CGFloat.abs(columnBounds.midX - lineBounds.midX) < maximalProximity.width
+	return centred
+}
+
 func contiguous(line1: LineContext, line2: LineContext) -> Bool {
 	if !verticallyProximal(line1, line2) { return false }
 	if !sameLineHeight(line1.line.element, line2.line.element) { return false }
 	return
 		horizontallyCoincident(line1, line2)
+	||	centred(line1) && centred(line2)
 	||	nonJustifiedTerminalLine(line1.line.element, line2.line.element)
 }
 
