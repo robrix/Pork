@@ -7,7 +7,9 @@ final class PDFViewController: NSViewController {
 
 	override var representedObject: AnyObject? {
 		didSet {
-			(representedObject as? Document)?.document.map(pdfView.setDocument)
+			if let document = representedObject as? Document, pdfDocument = document.document, file = document.file {
+				pdfView.setDocument(pdfDocument)
+			}
 		}
 	}
 }
