@@ -1,17 +1,15 @@
 //  Copyright (c) 2015 Rob Rix. All rights reserved.
 
 public struct Line: Comparable {
-	init(_ attributedString: NSAttributedString, _ bounds: CGRect) {
-		self.attributedString = attributedString
-		self.bounds = bounds
-	}
-
 	init(_ selection: PDFSelection, _ defaultAttributes: [String: NSObject]) {
 		let string = selection.attributedString().mutableCopy() as! NSMutableAttributedString
 		string.addAttributes(defaultAttributes, range: NSRange(string))
-		self.init(string, selection.boundsForPage(selection.pages().first as! PDFPage))
+		self.selection = selection
+		self.attributedString = string
+		self.bounds = selection.boundsForPage(selection.pages().first as! PDFPage)
 	}
 
+	let selection: PDFSelection
 	let attributedString: NSAttributedString
 	let bounds: CGRect
 
