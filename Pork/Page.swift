@@ -12,21 +12,21 @@ public struct Page {
 	}
 
 	private func columnForLine(byLeftEdge line: Line) -> Array<Column>.Index? {
-		return bestColumnForLine(line) {
+		return bestColumnForLine(line, 20) {
 			CGFloat.abs($0.bounds.minX - line.bounds.minX)
 		}
 	}
 
 	private func columnForLine(byCentre line: Line) -> Array<Column>.Index? {
-		return bestColumnForLine(line) {
+		return bestColumnForLine(line, 10) {
 			CGFloat.abs($0.bounds.midX - line.bounds.midX)
 		}
 	}
 
-	private func bestColumnForLine(line: Line, _ metric: Column -> CGFloat) -> Array<Column>.Index? {
+	private func bestColumnForLine(line: Line, _ maxAllowableDistance: CGFloat, _ metric: Column -> CGFloat) -> Array<Column>.Index? {
 		var bestDistance = CGFloat.infinity
-		let maxAllowableDistance: CGFloat = 10
 		return reduce(enumerate(columns), nil) {
+			if CGFloat.abs($1.element.bounds.minY - line.bounds.maxY) > maxAllowableDistance { return $0 }
 			let distance = metric($1.element)
 			if distance < min(maxAllowableDistance, bestDistance) {
 				bestDistance = distance

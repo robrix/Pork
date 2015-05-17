@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="7703" systemVersion="14D136" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7703"/>
-        <plugIn identifier="com.apple.pdfkit.ibplugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7706"/>
+        <plugIn identifier="com.apple.pdfkit.ibplugin" version="7706"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -670,7 +670,7 @@
             <objects>
                 <splitViewController id="kAo-NR-QbU" customClass="SplitViewController" customModule="Pork" customModuleProvider="target" sceneMemberID="viewController">
                     <splitViewItems>
-                        <splitViewItem id="axY-Kr-p6s"/>
+                        <splitViewItem canCollapse="YES" collapsed="YES" id="axY-Kr-p6s"/>
                         <splitViewItem id="oYo-4H-JlP"/>
                     </splitViewItems>
                     <splitView key="splitView" autosaveName="SplitView" dividerStyle="thin" vertical="YES" id="E05-BY-jOX">
@@ -686,10 +686,10 @@
             </objects>
             <point key="canvasLocation" x="-122" y="628"/>
         </scene>
-        <!--View Controller-->
+        <!--PDF View Controller-->
         <scene sceneID="gH2-TJ-WkJ">
             <objects>
-                <viewController id="yfQ-nP-vsc" customClass="PDFViewController" customModule="Pork" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="yfQ-nP-vsc" userLabel="PDF View Controller" customClass="PDFViewController" customModule="Pork" customModuleProvider="target" sceneMemberID="viewController">
                     <pdfView key="view" autoresizesSubviews="NO" wantsLayer="YES" autoScales="YES" id="End-nc-qtR">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
