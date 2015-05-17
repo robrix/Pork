@@ -26,6 +26,7 @@ public struct Page {
 	private func bestColumnForLine(line: Line, _ maxAllowableDistance: CGFloat, _ metric: Column -> CGFloat) -> Array<Column>.Index? {
 		var bestDistance = CGFloat.infinity
 		return reduce(enumerate(columns), nil) {
+			if CGFloat.abs($1.element.bounds.minY - line.bounds.maxY) > maxAllowableDistance { return $0 }
 			let distance = metric($1.element)
 			if distance < min(maxAllowableDistance, bestDistance) {
 				bestDistance = distance
